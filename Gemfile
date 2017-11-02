@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 
 gem 'webpacker'
+gem 'igdb_api', :git => 'https://github.com/igdb/igdb-api-ruby'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
