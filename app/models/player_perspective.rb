@@ -1,0 +1,2 @@
+class PlayerPerspective < ApplicationRecord
+end
