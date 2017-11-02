@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171102165141) do
+ActiveRecord::Schema.define(version: 20171102173713) do
+
+  create_table "Player_perspectives", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_Player_perspectives_on_game_id"
+  end
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -28,12 +36,16 @@ ActiveRecord::Schema.define(version: 20171102165141) do
     t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_game_engines_on_game_id"
   end
 
   create_table "game_modes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_game_modes_on_game_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -53,12 +65,30 @@ ActiveRecord::Schema.define(version: 20171102165141) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_engine_id"
+    t.integer "game_mode_id"
+    t.integer "genre_id"
+    t.integer "keyword_id"
+    t.integer "Player_perspective_id"
+    t.integer "theme_id"
+    t.integer "image_id"
+    t.integer "screenshot_id"
+    t.index ["Player_perspective_id"], name: "index_games_on_Player_perspective_id"
+    t.index ["game_engine_id"], name: "index_games_on_game_engine_id"
+    t.index ["game_mode_id"], name: "index_games_on_game_mode_id"
+    t.index ["genre_id"], name: "index_games_on_genre_id"
+    t.index ["image_id"], name: "index_games_on_image_id"
+    t.index ["keyword_id"], name: "index_games_on_keyword_id"
+    t.index ["screenshot_id"], name: "index_games_on_screenshot_id"
+    t.index ["theme_id"], name: "index_games_on_theme_id"
   end
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_genres_on_game_id"
   end
 
   create_table "images", force: :cascade do |t|
@@ -71,18 +101,16 @@ ActiveRecord::Schema.define(version: 20171102165141) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "player_perspectives", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_keywords_on_game_id"
   end
 
   create_table "themes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_themes_on_game_id"
   end
 
   create_table "users", force: :cascade do |t|
