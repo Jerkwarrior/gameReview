@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'webpacker'
 gem 'devise'
 gem 'paperclip'
+gem 'ransack'
 gem 'guard-rspec', require: false
 
 group :development, :test do
