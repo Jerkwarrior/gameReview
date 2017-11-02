@@ -12,23 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20171102165141) do
 
-  create_table "games", force: :cascade do |t|
-    t.string "name"
-    t.string "slug"
-    t.string "url"
-    t.text "summary"
-    t.integer "collection"
-    t.integer "franchise"
-    t.integer "popularity"
-    t.integer "game"
-    t.integer "category"
-    t.integer "status"
-    t.string "release_date_human"
-    t.string "cover_url"
-    t.string "pegi_rating"
-    t.string "steam_id"
-  end
-  
   create_table "companies", force: :cascade do |t|
     t.string "name"
     t.string "slug"
@@ -49,6 +32,25 @@ ActiveRecord::Schema.define(version: 20171102165141) do
 
   create_table "game_modes", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string "name"
+    t.string "slug"
+    t.string "url"
+    t.text "summary"
+    t.integer "collection"
+    t.integer "franchise"
+    t.integer "popularity"
+    t.integer "game"
+    t.integer "category"
+    t.integer "status"
+    t.string "release_date_human"
+    t.string "cover_url"
+    t.string "pegi_rating"
+    t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
