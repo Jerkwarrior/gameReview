@@ -6,5 +6,8 @@ FactoryBot.define do
     description 'description'
     country 1
     website 'http://www.website.com'
+    game
+    publisher
+    developer
   end
 end

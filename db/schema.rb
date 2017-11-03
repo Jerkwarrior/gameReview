@@ -10,15 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171102173713) do
-
-  create_table "Player_perspectives", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "game_id"
-    t.index ["game_id"], name: "index_Player_perspectives_on_game_id"
-  end
+ActiveRecord::Schema.define(version: 20171103070820) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -29,6 +21,17 @@ ActiveRecord::Schema.define(version: 20171102173713) do
     t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "publisher_id"
+    t.integer "developer_id"
+    t.integer "game_id"
+    t.index ["developer_id"], name: "index_companies_on_developer_id"
+    t.index ["game_id"], name: "index_companies_on_game_id"
+    t.index ["publisher_id"], name: "index_companies_on_publisher_id"
+  end
+
+  create_table "developers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "game_engines", force: :cascade do |t|
@@ -36,16 +39,26 @@ ActiveRecord::Schema.define(version: 20171102173713) do
     t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "game_id"
-    t.index ["game_id"], name: "index_game_engines_on_game_id"
+  end
+
+  create_table "game_engines_games", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "game_engine_id", null: false
+    t.index ["game_engine_id", "game_id"], name: "index_game_engines_games_on_game_engine_id_and_game_id"
+    t.index ["game_id", "game_engine_id"], name: "index_game_engines_games_on_game_id_and_game_engine_id"
   end
 
   create_table "game_modes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "game_id"
-    t.index ["game_id"], name: "index_game_modes_on_game_id"
+  end
+
+  create_table "game_modes_games", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "game_mode_id", null: false
+    t.index ["game_id", "game_mode_id"], name: "index_game_modes_games_on_game_id_and_game_mode_id"
+    t.index ["game_mode_id", "game_id"], name: "index_game_modes_games_on_game_mode_id_and_game_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -65,30 +78,44 @@ ActiveRecord::Schema.define(version: 20171102173713) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "game_engine_id"
-    t.integer "game_mode_id"
-    t.integer "genre_id"
-    t.integer "keyword_id"
-    t.integer "Player_perspective_id"
-    t.integer "theme_id"
     t.integer "image_id"
-    t.integer "screenshot_id"
-    t.index ["Player_perspective_id"], name: "index_games_on_Player_perspective_id"
-    t.index ["game_engine_id"], name: "index_games_on_game_engine_id"
-    t.index ["game_mode_id"], name: "index_games_on_game_mode_id"
-    t.index ["genre_id"], name: "index_games_on_genre_id"
+    t.integer "video_id"
     t.index ["image_id"], name: "index_games_on_image_id"
-    t.index ["keyword_id"], name: "index_games_on_keyword_id"
-    t.index ["screenshot_id"], name: "index_games_on_screenshot_id"
-    t.index ["theme_id"], name: "index_games_on_theme_id"
+    t.index ["video_id"], name: "index_games_on_video_id"
+  end
+
+  create_table "games_genres", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "genre_id", null: false
+    t.index ["game_id", "genre_id"], name: "index_games_genres_on_game_id_and_genre_id"
+    t.index ["genre_id", "game_id"], name: "index_games_genres_on_genre_id_and_game_id"
+  end
+
+  create_table "games_keywords", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "keyword_id", null: false
+    t.index ["game_id", "keyword_id"], name: "index_games_keywords_on_game_id_and_keyword_id"
+    t.index ["keyword_id", "game_id"], name: "index_games_keywords_on_keyword_id_and_game_id"
+  end
+
+  create_table "games_player_perspectives", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "player_perspective_id", null: false
+    t.index ["game_id", nil], name: "index_games_player_perspectives_on_game_id_and_perspective_id"
+    t.index [nil, "game_id"], name: "index_games_player_perspectives_on_perspective_id_and_game_id"
+  end
+
+  create_table "games_themes", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "theme_id", null: false
+    t.index ["game_id", "theme_id"], name: "index_games_themes_on_game_id_and_theme_id"
+    t.index ["theme_id", "game_id"], name: "index_games_themes_on_theme_id_and_game_id"
   end
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "game_id"
-    t.index ["game_id"], name: "index_genres_on_game_id"
   end
 
   create_table "images", force: :cascade do |t|
@@ -101,16 +128,23 @@ ActiveRecord::Schema.define(version: 20171102173713) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "game_id"
-    t.index ["game_id"], name: "index_keywords_on_game_id"
+  end
+
+  create_table "player_perspectives", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "publishers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "themes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "game_id"
-    t.index ["game_id"], name: "index_themes_on_game_id"
   end
 
   create_table "users", force: :cascade do |t|
