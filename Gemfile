@@ -16,6 +16,8 @@ gem 'devise'
 gem 'paperclip'
 gem 'ransack'
 gem 'guard-rspec', require: false
+gem 'vcr'
+gem 'webmock'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
