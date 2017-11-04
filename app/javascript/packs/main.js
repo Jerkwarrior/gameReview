@@ -31,14 +31,13 @@
 
 
 import Vue from 'vue/dist/vue.esm'
-import Hello from 'app.vue'
+import Navbar from 'components/navbar.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
-    el: '#hello',
+    el: '#app',
     data: {
-      message: "Can you say hello?"
     },
-    components: { app: Hello }
+    components: { navbar: Navbar }
   })
 })

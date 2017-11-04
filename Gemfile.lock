@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/igdb/igdb-api-ruby
-  revision: d17dcbd593b112b99eb35ece18af3c3fcc8fdc4e
+  remote: https://github.com/jerkwarrior/igdb-api-ruby
+  revision: b61418d4e4eab2c329a1a49f3d614d77f7c778f4
   specs:
     igdb_api (0.8.5)
       multi_json
