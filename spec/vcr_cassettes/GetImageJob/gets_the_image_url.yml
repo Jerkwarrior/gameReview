@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/games/1/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - ae52a388999537f0dc7ea701ae7764e5
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 06 Nov 2017 09:51:49 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '1455'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/61WzY7bNhB+FVaXXrS2/n98S1u02KIBiiC3ZGHQEiVxlxIVkrJXu9hLgT5MDwVy6alFe+gLOG/UGcr22htv0RSBLtRw+M03w+HMvLl3eOksfNfpaMuchfO64awil5cL8rph5CUzVJAXNXNcR4uhBgWDChecX5iGXbS4f0Ht/qAEbDfG9Hoxn282mxmvy9WskO28Bmw9f/ZkoRg1rFxSA0yCPI3jJAozz/MAtC8ft2IvD/MgCoIgzIDP0LZUjZYzI4MwvAVVYq0QrsmKFjdfkNeAXRItKyNGQjUZ5UBaesNwociGjnBAyaFuiB+Tjm0I8O0Fu3VJJ7sLwTtGFRFszYQm1SAEkRURUhpiJNGGQXRoV5J6oKrUKJOD0UDLzMhl2yu5ZiVhHWtH8uLStfg1LWtmtD1GieJrZnhXA5ZUI9lwsFAqurE8eQeAECyykUqUaPmZ23EBqRe0YKjTyw1TQNVaM6xoOilkzZl2SUU7angBhxQTvOaym3gUUqmhN/A/w+uQQrAC/5xF4DqKIkFnkfuzMI3iOI9zPwyz0HV62Q+CKm7gEoJZGrsOrWvFantjh2PezDuzsSzk0BmbeUaCG8f6SZYGaZ7mcZLkfnKqsD8XxXtmB0nkOjbRnMWbwA2ywIvcIPFzXMeR50ZpFoS4jgM3TDIf1mkU+G7khldgg9Z40Hf91EW1JIvCOEr8wyrfr7LUjeF86ntgcVoFXrZfZd5ulfh7vczf7+Zh6vpeCmH0syAGqyUmluyZQttIox9WgutmEiD/q8mpJetqyEUrRb0CQllLzH4ILmQ+Wxq5XDF8JvdOQzVkO8Q2iuwj6qRqqbCSILGSKckNszJ8ad4D2BZ0ZGqJbHq8/7U15+8ZtLI8CG7YCDlZ2t8QApwnGFI39WI39xLw0XoHqTtdxy6qiMQ6ZUWxCxcQIlbFlTZLSEhGNVvic4ckiMM4TywxD4MiYOcxYYCoqcAnxMEAHZ9F2f1pePbqzgJy6Rw+ZOY+2ZuhpbByAti4eEnVReDDi8D8tpqAET64x/jBeXzINUiKJ/j+Kf4TYD84RT7PHJ5emkTRU+jsGNoPgPp4EQR7C35gLcQPECwqDFNYBtZs2e2ey/3H1X/76/av7Z8fft6+J9s/tr99+Gn7fvs7fO9tgWhbhnfhvBq05rQjhhvBHOS/A/qGqhvyo5LXkEhnu8kjxncMsvO/QPzwJRwlJeD8/QsAnYB8q1hXNHsQcFNDU2GdbqSZHJy603wOTaJm+rE14WISzodeSFrOzdJAKFfzfliPZRWXydq74+q2au76enbd12hXyKHkHXSfJXZP55wqqG14aRq4Oyg+TsN43WCVyjz08dPp3HmrvH1XvFuZtutuec1urotn6JxT/dx0rmlkEr/wu3Jt7oZqVaoqeobOOdXPTWesgkZXZRlVLGfrZNP2I3uGzjnVRzqZd0Qn8f4nnSZi0pSrWsrQW0fetRm09wydc6r/Eh1I7TUvmTx9topywZSz25uA86/jKPwqGb7PMvsiChhGFLaHT3fnHa0l1KFblRhZrfu2HvPnnsI51SN3sBIdohtj12FarZDVvv8n2ImgqqFMj53sNde7Ga+QnYHnjkMOTHmaYFvCSU8P3NCVYAQME2xfdq6pYfTyEzLCADdNOeg/kZ0YZ2/V2+7SWDzKO70gr2CQ4xpGI5ztbnAeW3MpoKQwHIj21CKgtmErzT9uM8Hx/Avjr51CZxt+w6mNLa7mtrouoZQtwZulrYZLrIandR/64pNZGmdDNsNps7XDHSstJu37eeD7aeTZ+2W3trALGzjUxV6w24byjwPyrsPvO/n9aYORVYXzbiFl7ywqCj0XZN1HIkG76d+ogeEk0vaU1ycy3Qtupgo8ARwOH+0cZKWSPX/8PaLR0lvbBx9ZnEoOf9OR6ffh6uHqH1OfUXnXDAAA
+    http_version: 
+  recorded_at: Mon, 06 Nov 2017 09:51:49 GMT
+recorded_with: VCR 3.0.3

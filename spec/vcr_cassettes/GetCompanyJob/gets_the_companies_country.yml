@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/companies/70/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - ae52a388999537f0dc7ea701ae7764e5
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 04 Nov 2017 14:19:54 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '2239'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Sat, 04 Nov 2017 14:19:54 GMT
+recorded_with: VCR 3.0.3

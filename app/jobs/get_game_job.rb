@@ -10,11 +10,11 @@ class GetGameJob < ApplicationJob
     game.summary = ig.summary
     game.franchise = ig.franchise
     game.popularity = ig.popularity # TODO Should be float
-    # TODO game needs to be done ith dlc, expansion, etc.
     game.category = ig.category
     game.status = ig.status
     game.cover_url = ig.cover.url
     game.release_date_human = ig.release_dates.first.human
+    # TODO game needs to be done ith dlc, expansion, etc.
     # TODO pegi_rating, steam_id
     game.save!
   end

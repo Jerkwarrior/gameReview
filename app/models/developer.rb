@@ -1,3 +1,4 @@
-class Developer < ApplicationRecord
-  has_many :games, through: :company
+class Developers < ApplicationRecord
+  belongs_to :games
+  belongs_to :companies
 end

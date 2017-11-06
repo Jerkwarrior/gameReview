@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171103070820) do
+ActiveRecord::Schema.define(version: 20171106100903) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -21,17 +21,13 @@ ActiveRecord::Schema.define(version: 20171103070820) do
     t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "publisher_id"
-    t.integer "developer_id"
-    t.integer "game_id"
-    t.index ["developer_id"], name: "index_companies_on_developer_id"
-    t.index ["game_id"], name: "index_companies_on_game_id"
-    t.index ["publisher_id"], name: "index_companies_on_publisher_id"
   end
 
   create_table "developers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "company_id"
+    t.integer "game_id"
+    t.index ["company_id"], name: "index_developers_on_company_id"
+    t.index ["game_id"], name: "index_developers_on_game_id"
   end
 
   create_table "game_engines", force: :cascade do |t|
@@ -78,10 +74,6 @@ ActiveRecord::Schema.define(version: 20171103070820) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "image_id"
-    t.integer "video_id"
-    t.index ["image_id"], name: "index_games_on_image_id"
-    t.index ["video_id"], name: "index_games_on_video_id"
   end
 
   create_table "games_genres", id: false, force: :cascade do |t|
@@ -96,6 +88,13 @@ ActiveRecord::Schema.define(version: 20171103070820) do
     t.integer "keyword_id", null: false
     t.index ["game_id", "keyword_id"], name: "index_games_keywords_on_game_id_and_keyword_id"
     t.index ["keyword_id", "game_id"], name: "index_games_keywords_on_keyword_id_and_game_id"
+  end
+
+  create_table "games_platforms", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "platform_id", null: false
+    t.index ["game_id", "platform_id"], name: "index_games_platforms_on_game_id_and_platform_id"
+    t.index ["platform_id", "game_id"], name: "index_games_platforms_on_platform_id_and_game_id"
   end
 
   create_table "games_player_perspectives", id: false, force: :cascade do |t|
@@ -122,10 +121,19 @@ ActiveRecord::Schema.define(version: 20171103070820) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_images_on_game_id"
   end
 
   create_table "keywords", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "platforms", force: :cascade do |t|
+    t.string "name"
+    t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -137,8 +145,10 @@ ActiveRecord::Schema.define(version: 20171103070820) do
   end
 
   create_table "publishers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "company_id"
+    t.integer "game_id"
+    t.index ["company_id"], name: "index_publishers_on_company_id"
+    t.index ["game_id"], name: "index_publishers_on_game_id"
   end
 
   create_table "themes", force: :cascade do |t|
@@ -174,6 +184,8 @@ ActiveRecord::Schema.define(version: 20171103070820) do
     t.string "youtube_slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_videos_on_game_id"
   end
 
 end

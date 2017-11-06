@@ -1,3 +1,3 @@
 class Video < ApplicationRecord
-  belongs_to :game
+  has_one :game 
 end
