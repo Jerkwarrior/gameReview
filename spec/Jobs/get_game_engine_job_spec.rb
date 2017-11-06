@@ -13,4 +13,8 @@ RSpec.describe GetGameEngineJob, vcr: true, type: :job do
     expect(@engine.first.name).to eq "Source"
   end
 
+  it 'gets a game engine logo' do
+    expect(@engine.first.logo_url).to eq "//images.igdb.com/igdb/image/upload/t_thumb/rk2pcdi9skhph6e5ysby.jpg"
+  end
+
 end
