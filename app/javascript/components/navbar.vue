@@ -1,23 +1,31 @@
-<template lang="pug">
-nav
-	ul
-		li.active
-			a(href="#") Home
-		li
-			a(href="#") Games
-		li
-			a(href="#") Developers
-		li
-			a(href="#") Publishers
+<template>
+	<nav>
+	    <ul>
+	      <li>
+	        <router-link to="/">Home</router-link>
+	      </li>
+				<li>
+	        <router-link to="/games">Games</router-link>
+	      </li>
+				<li>
+					<router-link to="/developers">Developers</router-link>
+				</li>
+				<li>
+					<router-link to="/publishers">Publishers</router-link>
+				</li>
+	    </ul>
+		<!-- route outlet -->
+		<!-- component matched by the route will render here -->
+  </nav>
 </template>
 
 <script>
 export default {
-  data: function () {
-    return {
-      message: "Navbar!"
-    }
-  }
+	data: function() {
+		return {
+		
+		}
+	}
 }
 </script>
 

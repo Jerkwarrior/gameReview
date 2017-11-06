@@ -29,15 +29,49 @@
 //   <app></app>
 // </div>
 
-
 import Vue from 'vue/dist/vue.esm'
-import Navbar from 'components/navbar.vue'
+import VueRouter from 'vue-router'
+import Navbar from 'components/navbar'
+Vue.use(VueRouter)
 
-document.addEventListener('DOMContentLoaded', () => {
+// 0. If using a module system, call Vue.use(VueRouter)
+
+// 1. Define route components.
+// These can be imported from other files
+const Home = { template: '<div>Home</div>'}
+const Games = { template: '<div>Games</div>'}
+const Developers = { template: '<div>Developers</div>'}
+const Publishers = { template: '<div>Publishers</div>'}
+
+// 2. Define some routes
+// Each route should map to a component. The "component" can
+// either be an actual component constructor created via
+// Vue.extend(), or just a component options object.
+// We'll talk about nested routes later.
+const routes = [
+  { path: '/', component: Home },
+  { path: '/games', component: Games },
+  { path: '/developers', component: Developers },
+  { path: '/publishers', component: Publishers }
+]
+
+// 3. Create the router instance and pass the `routes` option
+// You can pass in additional options here, but let's
+// keep it simple for now.
+const router = new VueRouter({
+  routes
+})
+
+// 4. Create and mount the root instance.
+// Make sure to inject the router with the router option to make the
+// whole app router-aware.
+document.addEventListener( 'DOMContentLoaded', () =>  {
   const app = new Vue({
+    router,
     el: '#app',
     data: {
     },
-    components: { navbar: Navbar }
-  })
+    components: { navbar: Navbar}
 })
+})
+// Now the app has started!
