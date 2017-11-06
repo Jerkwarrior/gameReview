@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171103070820) do
+ActiveRecord::Schema.define(version: 20171104151136) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -21,17 +21,13 @@ ActiveRecord::Schema.define(version: 20171103070820) do
     t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "publisher_id"
-    t.integer "developer_id"
-    t.integer "game_id"
-    t.index ["developer_id"], name: "index_companies_on_developer_id"
-    t.index ["game_id"], name: "index_companies_on_game_id"
-    t.index ["publisher_id"], name: "index_companies_on_publisher_id"
   end
 
   create_table "developers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "company_id"
+    t.integer "game_id"
+    t.index ["company_id"], name: "index_developers_on_company_id"
+    t.index ["game_id"], name: "index_developers_on_game_id"
   end
 
   create_table "game_engines", force: :cascade do |t|
@@ -137,8 +133,10 @@ ActiveRecord::Schema.define(version: 20171103070820) do
   end
 
   create_table "publishers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "company_id"
+    t.integer "game_id"
+    t.index ["company_id"], name: "index_publishers_on_company_id"
+    t.index ["game_id"], name: "index_publishers_on_game_id"
   end
 
   create_table "themes", force: :cascade do |t|

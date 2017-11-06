@@ -1,7 +1,6 @@
 RSpec.describe GetKeywordJob, vcr: true, type: :job do
 
   it 'gets a keyword' do
-    # ActiveJob::Base.queue_adapter = :test
     GetKeywordJob.perform_now(1)
     expect(Keyword.where(id: 1).length).to eq 1
   end

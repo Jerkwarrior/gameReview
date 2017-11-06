@@ -1,3 +1,4 @@
-class Publisher < ApplicationRecord
-  has_many :games, through: :company
+class Publishers < ApplicationRecord
+  belongs_to :games
+  belongs_to :companies
 end
