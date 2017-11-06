@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171104151136) do
+ActiveRecord::Schema.define(version: 20171106093706) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -74,10 +74,6 @@ ActiveRecord::Schema.define(version: 20171104151136) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "image_id"
-    t.integer "video_id"
-    t.index ["image_id"], name: "index_games_on_image_id"
-    t.index ["video_id"], name: "index_games_on_video_id"
   end
 
   create_table "games_genres", id: false, force: :cascade do |t|
@@ -118,6 +114,8 @@ ActiveRecord::Schema.define(version: 20171104151136) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_images_on_game_id"
   end
 
   create_table "keywords", force: :cascade do |t|
@@ -172,6 +170,8 @@ ActiveRecord::Schema.define(version: 20171104151136) do
     t.string "youtube_slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
+    t.index ["game_id"], name: "index_videos_on_game_id"
   end
 
 end
