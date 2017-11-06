@@ -1,6 +1,7 @@
-<template lang="pug">
-  #app
-    p {{ message }}
+<template>
+    <p>
+    {{ message }}
+    </p>
 </template>
 
 <script>
