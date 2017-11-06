@@ -32,16 +32,17 @@
 import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router'
 import Navbar from 'components/navbar'
+import Home from 'components/home'
+import Games from 'components/games'
+import Developers from 'components/developers'
+import Publishers from 'components/publishers'
 Vue.use(VueRouter)
 
 // 0. If using a module system, call Vue.use(VueRouter)
 
 // 1. Define route components.
 // These can be imported from other files
-const Home = { template: '<div>Home</div>'}
-const Games = { template: '<div>Games</div>'}
-const Developers = { template: '<div>Developers</div>'}
-const Publishers = { template: '<div>Publishers</div>'}
+
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
