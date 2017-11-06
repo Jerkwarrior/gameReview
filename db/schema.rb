@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171106093706) do
+ActiveRecord::Schema.define(version: 20171106100903) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -90,6 +90,13 @@ ActiveRecord::Schema.define(version: 20171106093706) do
     t.index ["keyword_id", "game_id"], name: "index_games_keywords_on_keyword_id_and_game_id"
   end
 
+  create_table "games_platforms", id: false, force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.integer "platform_id", null: false
+    t.index ["game_id", "platform_id"], name: "index_games_platforms_on_game_id_and_platform_id"
+    t.index ["platform_id", "game_id"], name: "index_games_platforms_on_platform_id_and_game_id"
+  end
+
   create_table "games_player_perspectives", id: false, force: :cascade do |t|
     t.integer "game_id", null: false
     t.integer "player_perspective_id", null: false
@@ -120,6 +127,13 @@ ActiveRecord::Schema.define(version: 20171106093706) do
 
   create_table "keywords", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "platforms", force: :cascade do |t|
+    t.string "name"
+    t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
