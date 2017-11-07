@@ -7,8 +7,6 @@ class CreateCompanies < ActiveRecord::Migration[5.1]
       t.string :description
       t.integer :country
       t.string :website
-      #TODO array t.string :published
-      #TODO array t.string :developed
 
       t.timestamps
     end

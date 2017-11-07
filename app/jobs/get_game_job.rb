@@ -21,22 +21,22 @@ class GetGameJob < ApplicationJob
       game.game_engines << GameEngine.find(engine)
     end
 
-    ig.game_modes.each do |mode|
+    ig.game_modes&.each do |mode|
       GetGameModeJob.perform_now(mode)
       game.game_modes << GameMode.find(mode)
     end
 
-    ig.genres.each do |genre|
+    ig.genres&.each do |genre|
       GetGenreJob.perform_now(genre)
       game.genres << Genre.find(genre)
     end
 
-    ig.keywords.each do |keyword|
+    ig.keywords&.each do |keyword|
       GetKeywordJob.perform_now(keyword)
       game.keywords << Keyword.find(keyword)
     end
 
-    ig.themes.each do |theme|
+    ig.themes&.each do |theme|
       GetThemeJob.perform_now(theme)
       game.themes << Theme.find(theme)
     end

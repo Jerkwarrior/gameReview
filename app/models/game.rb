@@ -9,6 +9,6 @@ class Game < ApplicationRecord
   belongs_to :images, required: false
   belongs_to :videos, required: false
 
-  has_many :companies, through: :developers, source: :developed
-  has_many :companies, through: :publishers, source: :published
+  has_many :companies, through: :developers
+  has_many :companies, through: :publishers
 end

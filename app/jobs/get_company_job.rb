@@ -8,9 +8,10 @@ class GetCompanyJob < ApplicationJob
     company.slug = ig.slug
     company.logo_url = ig.logo&.url
     company.description = ig.description
-    company.country = ig.country
-    company.website = ig.website
+    company.country = ig&.country
+    company.website = ig&.website
     company.save!
     GetDeveloperJob.perform_later(igdb_id)
+    GetPublisherJob.perform_later(igdb_id)
   end
 end

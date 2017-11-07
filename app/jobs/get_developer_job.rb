@@ -4,8 +4,10 @@ class GetDeveloperJob < ApplicationJob
   def perform(igdb_id)
     return if Developer.where(id: igdb_id).exists?
     developer = Developer.new(company_id: igdb_id)
-    Company.developed&.each do |game|
-      developer.game_id = company.game
+    company = Igdb::Company.find(igdb_id)
+    company.developed&.each do |game_id|
+      GetGameJob.perform_now(game_id)
+      developer.game_id = game_id
     end
     developer.save!
   end
