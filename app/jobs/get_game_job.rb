@@ -12,9 +12,10 @@ class GetGameJob < ApplicationJob
     game.popularity = ig.popularity # TODO Should be float
     game.category = ig.category
     game.status = ig.status
-    game.cover_url = ig.cover&.url
+    game.cover_url = ig.cover&.url #This is thumb, needs to be cover_big
     game.release_date_human = ig.release_dates&.first.human
     # TODO pegi_rating, steam_id, not part of gem?
+    # TODO Get collection, Videos and screenshots!
 
     ig.game_engines&.each do |engine|
       GetGameEngineJob.perform_now(engine)

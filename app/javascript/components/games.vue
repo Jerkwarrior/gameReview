@@ -1,5 +1,7 @@
 <template>
-  <div>Games</div>
+  <div>
+    <game-info></game-info>
+  </div>
 </template>
 
 <script>

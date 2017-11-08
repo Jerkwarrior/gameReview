@@ -36,13 +36,19 @@ import Home from 'components/home'
 import Games from 'components/games'
 import Developers from 'components/developers'
 import Publishers from 'components/publishers'
-Vue.use(VueRouter)
+import gameInfo from 'components/gameInfo'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios);
+Vue.use(VueRouter);
 
 // 0. If using a module system, call Vue.use(VueRouter)
 
 // 1. Define route components.
 // These can be imported from other files
 
+Vue.component('game-info', gameInfo);
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
