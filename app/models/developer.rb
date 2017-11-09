@@ -1,4 +1,4 @@
 class Developer < ApplicationRecord
-  belongs_to :games, required: false
-  belongs_to :companies, required: false
+  belongs_to :games, optional: true
+  belongs_to :companies, optional: true
 end
