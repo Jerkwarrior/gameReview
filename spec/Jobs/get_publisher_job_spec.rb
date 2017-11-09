@@ -1,6 +1,7 @@
 RSpec.describe GetPublisherJob, vcr: true, type: :job do
 
   before(:each) do
+    # HACK Will need to move job creation to company job
     GetCompanyJob.perform_now(2)
     GetGameJob.perform_now(22975)
     GetGameJob.perform_now(13784)

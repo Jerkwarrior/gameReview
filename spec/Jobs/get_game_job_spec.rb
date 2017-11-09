@@ -51,11 +51,11 @@ RSpec.describe GetGameJob, vcr: true, type: :job do
     expect(@game.first.cover_url).to eq "//images.igdb.com/igdb/image/upload/t_thumb/ajwsi2l7piuzmfvwxsbj.jpg"
   end
 
-  it 'gets the initial release date' do
+  it 'gets the game initial release date' do
     expect(@game.first.release_date_human).to eq '2008-Dec-25'
   end
 
-  it 'adds the game engines' do
+  it 'gets the game engines' do
     expect(@game.first.game_engines.first.name).to eq "Unreal Engine"
   end
 
@@ -63,23 +63,30 @@ RSpec.describe GetGameJob, vcr: true, type: :job do
     expect(@game.first.game_modes.first.id).to eq 1
   end
 
-  it 'gets the genres' do
+  it 'gets the game genres' do
     expect(@game.first.genres.first.id).to eq 5
   end
 
-  it 'gets the keywords' do
+  it 'gets the game keywords' do
     expect(@game.first.keywords.first.id).to eq 138
   end
 
-  it 'gets the themes' do
+  it 'gets the game themes' do
     expect(@game.first.themes.first.id).to eq 1
   end
 
-  it 'gets the platforms' do
+  it 'gets the game platforms' do
     expect(@game.first.platforms.first.id).to eq 6
     expect(@game.first.platforms.length).to eq 8
   end
 
+  it 'gets the game screenshots' do
+    expect(@game.first.images.first.url).to eq "//images.igdb.com/igdb/image/upload/t_thumb/yg3j0yco50gq3wfcxujb.jpg"
+  end
+
+  it 'gets the game videos' do
+    expect(@game.first.videos.first.name).to eq "Trailer"
+  end
   # TODO Test image and video
 
 end
