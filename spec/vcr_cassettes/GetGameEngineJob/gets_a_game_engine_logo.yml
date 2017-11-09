@@ -2,6 +2,94 @@
 http_interactions:
 - request:
     method: get
+    uri: https://api-2445582011268.apicast.io/companies/20/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - 77b83b7c429cd6155876d2ed464c55e4
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 09 Nov 2017 09:32:46 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '193'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/3WPywrCQAxFf0Wy7mv6sO2sBT/AZSll7ITpYF/MwyLivxtBdKOBBMLlnuQ2d9ASeJoEMIsJgcNBmIvVEndH2ncn56VeLATQGxQOZScccJbWdbovWFInCTn9Kr9SzsqCqszyqgrAjl4RVL6hoSJoaD9Qb0ZSB+dWy+N427ZIK3mO+mWKqVcxa7TxP7N1wrjudbrraajF3IDTO/0gZoU/BIlXHJcVKXCTsoBlZdk+2icAwpJ7AwEAAA==
+    http_version: 
+  recorded_at: Thu, 09 Nov 2017 09:32:46 GMT
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/games/3568/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - 77b83b7c429cd6155876d2ed464c55e4
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 09 Nov 2017 09:32:47 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '1464'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/61WzY7bNhB+FUJn2dafJdm3tkCDpk0TBEV7yC4MWqIl7kqiQFJ2hcUCTXLpoQUK9B16aPoYyYt0X6TfUHay2aTBAu1FoEjOfDPfDGfm2ZUnS28dL9Pc9zreCm/tPa60YJ9zaxvB0mTNnghtVMfUjn2jdNmM7AveyK3Qnu+ZZqggoSAx2zqJWZrMeicwU7tZ4wRmxVuBQTe4X1vbm/VicTgc5rIqt/NCtYsK6GZxf1WFFtyKcsOttw7jfBXGaZQlcQ5Hhr58d7QMgjhMg2gVBytYPLQt1yOMOLu3o0waxpnlhZWAZ0+fPGA7pZmtBftWdlZ0pYL8/Kw7676ETYOWXQWBSsu+p6WxSo+N7AQ7SFuzdmis7IHZK2PkFgtowD3jM96VJCg6kFCKnexIvKi5BjbsKBpuDDOjsaL1gQ+7jNVwtZIFEz0+NTdMy6q2sF4LywFaMmkN6xteCCY7Z3UtuMYeHH3fKd4Z55naA4yzUhS8FM6v7yBFAWJWNI1xSpxXpOMRr7rBsAe8aXhn4QSQC9GRCZXm5UChwL2dLKCVMCH8hDfcwjjesc90O7JDrRzLIKQik61y16xWAwgqmVED/nUH1ZWcYkTed1CyFwy45ZzBRk2+EcudMEZMdvYN8XECbtThRCTO//7pd7e7l6ChdYwg0KPmXedY0UNDERCNtIJsNIKpDn7ZWg2kVJq3mdBrYYTew6DJPOxJuHvoALmzI+hCZpg5+4FSoJB72bAD12yrxQEQ/olF0ohIlVOqwBihtcuRolYgcE3MbAWCPjoCSH+n6Fwh7BLxO4aY3jKZ4RLYjj4jMwcQyNkWPpVMjOLEsoAx5kSpVhYZDcILKew4P/PoqammEQV5Rk8tjH1vB4oKXEe9yOPo1r/x1s+wc+57veqHhmtp8djCebT0PffCcR6n2SryozRPQj9PcqzCNPZX0BPmwSrwoxV+Q7xYP84CvOcky6MYGi2vSDzM/HjlxONlkmZvV/lplYWnVZ75yzjNsyhKk+NqlaXTKg7y5XGVLAEdZHGWhHmUAakUe9EoKj6El0e5fzzokY7S1NNBBlNTPw+nUz8J4gRXCnqPikpMAJNlKzZWbbaCatGVh/eJd+GtI1SkAOed0i3eDe3kudtBKURtwDPD3jKjW9eAbfgo9IYM6ikQ+4nH84nTTatKtxFi41KMB1Qv9xvDryiA61GYxX60TAJisRZTGByPpILKjdsI/RBELP2YFO2kNnajRSO4ERsqqN56FYerMEiCwJmK+OKkUENHddZZafEcWtKVIGpQcluctq/ep+ck4a0TkP4RiOm5gwnfq4eWY+WFq9Vq9nBoZmGC1KTkwobvQUd27d9DP1IqS/M7+qN3+iMczB4XdhZkk/7I3YSOMPgUQHZCCJFsSTp58HEXoiAMZg95N4vSE0R4hLgvwmqZuhS6jRDeQXjE9YcI8X9BiP9fhDwKPhmIE8LqAwSkFm9QG6cGsOmOleXqNMO8+aXi1NqVHthTdTlcvHk1oi4/ef3cdfjtwPSbX0ulX79iX48oUtvXz12da1tByew95D1HD0GJlJgOPPLoqPnmxZ83L/64efHXzcvfbl7+fPPyVZp8akT6d51UK6jTUl2Y5qLFQra8EubdUESLaXMx9I3i5cJuLAiizbC9MHtVi0tu2/qikLaYX/QVQTZqwECBMWdDw533sau4dpClrcHqMgXngpokopKlKDfC6C1ZZcZO9UaCWW8GAU0tG/PekioS4nXnCs0IhaJ56Nht0U3czEBjyiAtpzZF7XIa6tDtK/S5MGIjxhHjZh83eFCHxdDxlXXaMMKYNfteqkZ00wTDmemVtm40IrgfLZuxR7Ip2ZaXNAtUAzTfshcJ6R3E1sgPa1B8dyQV3fwgL2UvSsnnSlcL+lvQpLiZJsUNJsXNFO+N2m2meG9O8b4+vz7/BxrUXKxUCwAA
+    http_version: 
+  recorded_at: Thu, 09 Nov 2017 09:32:47 GMT
+- request:
+    method: get
     uri: https://api-2445582011268.apicast.io/game_engines/3/?fields=*
     body:
       encoding: US-ASCII
@@ -16,7 +104,7 @@ http_interactions:
       Content-Type:
       - text/json
       User-Key:
-      - ae52a388999537f0dc7ea701ae7764e5
+      - 77b83b7c429cd6155876d2ed464c55e4
       Host:
       - api-2445582011268.apicast.io
   response:
@@ -29,7 +117,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 06 Nov 2017 08:16:07 GMT
+      - Thu, 09 Nov 2017 09:32:47 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -43,5 +131,5 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/21Ry47bMAz8F52JWBT19G/0uAgCJ3Ztdf2CHwiCxf57R120e+mFoDjD0ZB8+1C5VbWQmpupU7X6sZzbo1OkHlvXHF17aw5Vs6TkQtLOaQ3qubbfkNMikhiwATQu/aLqD3VuI8SqKk9N3+2X3Lf3y2OZqpJ8FatzHZemrY7bMZzTvdrezfpoc9rfh3XwnXvt99fl19oXK+NytnluttetmFX/o4L2zO0xqNp7TWrocj/AntH2k9Q+nj369r+zfbkbjmPd66p6Pp/fBnus4dbNfZ67vfrXUKq7qt8Ms6PA5IMkMiJIrC6hlKwl0YGCS5FYgiFj8YoxgOkToSAChMEIiWJiYmMpBs0kJkSKLlpKFvKsJTnCyg1SyLIX1sTROoFyciWPDC2IaHwawUs+eERnIW01sCQ2Qtjjex8gh+MZR+wsPIoWFNjiV8c+aTLB4XyImMn40m4Te/R4BNz9Smodm+Pnsk1lD4xR4bUMwxiLPHBsb23m/GdPzl8/r78ByQMMZVwCAAA=
     http_version: 
-  recorded_at: Mon, 06 Nov 2017 08:16:07 GMT
+  recorded_at: Thu, 09 Nov 2017 09:32:47 GMT
 recorded_with: VCR 3.0.3

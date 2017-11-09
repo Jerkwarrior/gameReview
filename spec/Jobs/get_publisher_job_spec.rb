@@ -1,11 +1,18 @@
 RSpec.describe GetPublisherJob, vcr: true, type: :job do
 
   before(:each) do
-    GetCompanyJob.perform_now(70)
-    @company = Company.where(id: 70)
+    GetCompanyJob.perform_now(2)
+    GetGameJob.perform_now(22975)
+    GetGameJob.perform_now(13784)
+    GetGameJob.perform_now(25299)
+    GetGameJob.perform_now(22963)
+    GetPublisherJob.perform_now(2)
   end
 
-  xit 'gets a publisher' do
-    expect(Publisher.first.company_id).to eq 70
+  it 'gets a publisher' do
+    expect(Publisher.all.length).to eq 4
+    expect(Publisher.first.company_id).to eq 2
+    expect(Publisher.first.game_id).to eq 13784
+    expect(Publisher.last.game_id).to eq 22975
   end
 end
