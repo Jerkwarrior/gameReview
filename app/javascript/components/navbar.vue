@@ -1,16 +1,16 @@
 <template>
 	<nav>
 	    <ul>
-	      <li v-on:click="setActive('home')" :class="{ active: isActive('home') }">
+	      <li @click="setActive('home')" :class="{ active: isActive('home') }">
 	        <router-link to="/">Home</router-link>
 	      </li>
-				<li v-on:click="setActive('games')" :class="{ active: isActive('games') }">
+				<li @click="setActive('games')" :class="{ active: isActive('games') }">
 	        <router-link to="/games">Games</router-link>
 	      </li>
-				<li v-on:click="setActive('developers')" :class="{ active: isActive('developers') }">
+				<li @click="setActive('developers')" :class="{ active: isActive('developers') }">
 					<router-link to="/developers">Developers</router-link>
 				</li>
-				<li v-on:click="setActive('publishers')" :class="{ active: isActive('publishers') }">
+				<li @click="setActive('publishers')" :class="{ active: isActive('publishers') }">
 					<router-link to="/publishers">Publishers</router-link>
 				</li>
 				<input class="searching" placeholder="Search...">

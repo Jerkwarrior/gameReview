@@ -39,6 +39,7 @@ import Publishers from 'components/publishers'
 import gameInfo from 'components/gameInfo'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import Cards from 'components/cards'
 
 Vue.use(VueAxios, axios);
 Vue.use(VueRouter);
@@ -49,6 +50,7 @@ Vue.use(VueRouter);
 // These can be imported from other files
 
 Vue.component('game-info', gameInfo);
+Vue.component('cards', Cards);
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
