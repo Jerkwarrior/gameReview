@@ -23,46 +23,40 @@ class GetGameJob < ApplicationJob
     # TODO pegi_rating, steam_id, not part of gem?
 
     ig.game_engines&.each do |engine|
-      GetGameEngineJob.perform_now(engine)
-      game.game_engines << GameEngine.find(engine)
+      GetGameEngineJob.perform_later(engine)
     end
 
     ig.game_modes&.each do |mode|
-      GetGameModeJob.perform_now(mode)
-      game.game_modes << GameMode.find(mode)
+      GetGameModeJob.perform_later(mode)
     end
 
     ig.genres&.each do |genre|
-      GetGenreJob.perform_now(genre)
-      game.genres << Genre.find(genre)
+      GetGenreJob.perform_later(genre)
     end
 
     ig.keywords&.each do |keyword|
-      GetKeywordJob.perform_now(keyword)
-      game.keywords << Keyword.find(keyword)
+      GetKeywordJob.perform_later(keyword)
     end
 
     ig.themes&.each do |theme|
-      GetThemeJob.perform_now(theme)
-      game.themes << Theme.find(theme)
+      GetThemeJob.perform_later(theme)
     end
 
     ig.release_dates&.each do |date|
-      GetPlatformJob.perform_now(date.platform)
-      game.platforms << Platform.find(date.platform)
+      GetPlatformJob.perform_later(date.platform)
     end
 
     ig.screenshots&.each do |image|
       img = Image.new(game_id: igdb_id, url: image.url)
       img.save!
-      # game.images << Image.where(id: img.id)
     end
 
     ig.videos&.each do |video|
       vid = Video.new(game_id: igdb_id, name: video.name, youtube_slug: video.video_id)
       vid.save!
-      # game.videos << Video.find(id: vid.id)
     end
+
+    GetGameAttributesJob.perform_later(igdb_id)
 
     game.save!
 

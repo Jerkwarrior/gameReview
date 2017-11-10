@@ -1,4 +1,5 @@
 class GetGameEngineJob < ApplicationJob
+  queue_as :default
 
   def perform(igdb_id)
     return if GameEngine.where(id: igdb_id).exists?

@@ -1,4 +1,5 @@
 class GetPlatformJob < ApplicationJob
+  queue_as :default
 
   def perform(igdb_id)
     return if Platform.where(id: igdb_id).exists?

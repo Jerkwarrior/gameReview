@@ -4,9 +4,8 @@ class GetPublisherJob < ApplicationJob
   def perform(igdb_id)
     company = Igdb::Company.find(igdb_id)
     company.published&.each do |game_id|
-      return if Publisher.where(company_id: igdb_id, game_id: game_id).exists?
-      publisher = Publisher.new(company_id: igdb_id, game_id: game_id)
-      publisher.save!
+      next if game_id.blank?
+      Publisher.find_or_create_by(company_id: igdb_id, game_id: game_id)
     end
   end
 end
