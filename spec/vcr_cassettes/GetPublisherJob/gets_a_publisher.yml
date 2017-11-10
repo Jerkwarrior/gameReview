@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/companies/70/?fields=*
+    uri: https://api-2445582011268.apicast.io/companies/2/?fields=*
     body:
       encoding: US-ASCII
       string: ''
@@ -16,27 +16,32 @@ http_interactions:
       Content-Type:
       - text/json
       User-Key:
-      - ae52a388999537f0dc7ea701ae7764e5
+      - 77b83b7c429cd6155876d2ed464c55e4
       Host:
       - api-2445582011268.apicast.io
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
+      Content-Encoding:
+      - gzip
       Content-Type:
-      - text/plain; charset=us-ascii
+      - application/json
       Date:
-      - Tue, 07 Nov 2017 08:19:37 GMT
+      - Thu, 09 Nov 2017 13:25:54 GMT
       Server:
       - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '21'
+      - '1258'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: Authentication failed
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/31W7ZLTNhR9lTv+02VGbOJkE9v5t8DC0AKlQKczBWZHsRVbRZaMJK8bGP71SfpofZIeyc4mLAwzu9pEujr33KP7sW8/J7JKNguWaN6KZJM8kOYPbkXCktIK7kV1zX2ySRdFlqfzfL6ez+cs6bvqeLTCVroq8jwtlixxqq8Bs5VmGGF6q/C98b5zm9lsGIZzWVfb89K0M/x2XEvhZkdzZWqTbD5P12Yz2fJauOOd8GHcnPWdMrya+Wvf9O12VlVVWaqq22dt88ncfBS6/nT+V1eHUJTpK6m53V+HaJPvmcJskJVvks3F/IIljZB1g/DW6ReWVMKVVnZeGn2UiCpxI5TpHDUwvf+x50r6PZVGO6MEo5cPGXFdkdFKakEWm/c7xfdS11RDbEc7U/ZOBAuysmzIeWOhBqNe74ythfd8qwSVDbe89MK6EfCGO0+Dsapy5A1V0pXmRthzeqfx81rqUlBaFCtGB6YNdzQ9JznTCjI78o0YQX5y1BogIkIvS67UnjjU4bKFtZdeBUYAVUHCmh5wVfUWl54A7r9//mX0AjrYQWowpBdBNRe3X3tuCe4d4euGftHx6OD6V1XRK9H1WyXLaP4zrwRdtZ20I+pz7hxd7Xai9PF7iPyR5TXEuqyDyRTvIUbTCQtGDlTpqmqN9rA8u1RbYT1n9JBrXvF7wMUJpFB09lsvtqI8OQouLnvngXD2RvzNEffvWgbREAug753TU02L+Tw/SjtAWl5+7EG7ou2erhQIW6NlSZfWhxcjJXhUrlZmC79RKLynvBEkwmfPpW7xiaIarrl9ystdkDSoZYWHg2g06ecHg90WV+OjTGxKc39nel3FXHnF9/S8/7T/wGNkT6yo6U9kctN/CPJ6wAz0wJoWEtUEKZCUEbvsrQ2uamv6jmqhwVdRC5lq8JkIHFwqvhVqIvzmZH+8HKpBuvHZd0YpMwS6ziOXjNt8/YK3rzYCoRZq1Ky6RRxvIRc9SYfgXRfAQ4WgWsYcnriN5WUFlA/1FQX5lvRpVt8m6w8TdUyRsGt0bcK9Y0aSE6F4jxYH+ieJTN5KNLj9ndS9Tcl3+rGxoeyQgc+5RUtAshWhyIEBGSPwrUyjHjgiLUrhHNrbOT1DskWzqTsdcubRs4dRpnB0yujA2tEglAp/T043dKkrJIio+B3KU5l8l/CaXCdKuZuaSWhRI5dTld/ckZbOBumbKU4eWtgOjulubqAE71BQPBTJVtRch372IbwKxOEQZaCnLymQCBXc8MoMcMdVi9rY9ig3a6q+DE09VjEKT92MoTwWW9tDTkSTrsKGsTGDzNiyA36sE1CSug8eT7CC2LdZsUHHQHNwMh6F3PiBBueYQQje+uswXpNNVmCuLqFoHLrHk+sSS23sHtMXww0F7+PnBebWILZwJqaRO03cabyGAQoXHQ/VPd5tuK7FXdCMJR6vAV1PJve0E4fw8Z+EQ8vCVH2bLrP8gi1Wi6Jgi0WxXoY1W70P8zO+f7TKLlg6Zyu2ZtmS5QuW5SxP2SKFdZoxBLxmq3ydsaxA0FkOrDSF7RrH4TcH6BxbqyxlaZEuVyxdrgvsLIt0XNO4LhjeLs/jCojsYr2K60Vc13FdsIlyFm59RTxdwzLSx7paAS2fX2RhvwC1FVvOF5gC8Lyav//y/n8rt5gERgkAAA==
     http_version: 
-  recorded_at: Tue, 07 Nov 2017 08:19:37 GMT
+  recorded_at: Thu, 09 Nov 2017 13:25:54 GMT
 recorded_with: VCR 3.0.3

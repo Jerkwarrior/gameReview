@@ -1,3 +1,3 @@
 class Image < ApplicationRecord
-  has_one :game
+  belongs_to :game, required: false
 end
