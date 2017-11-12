@@ -2,11 +2,15 @@ class GetGameEngineJob < ApplicationJob
   queue_as :default
 
   def perform(igdb_id)
-    return if GameEngine.where(id: igdb_id).exists?
-    ig = Igdb::GameEngine.find(igdb_id)
-    engine = GameEngine.new(id: igdb_id)
-    engine.name = ig.name
-    engine.logo_url = ig.logo&.url
-    engine.save!
+    ig = Igdb::Game.find(igdb_id)
+    game = Game.find(igdb_id)
+    ig.game_engines&.each do |eng|
+      ig_eng = Igdb::GameEngine.find(eng)
+      engine = GameEngine.new(id: eng)
+      engine.name = ig_eng.name
+      engine.logo_url = ig_eng.logo&.url
+      engine.save!
+      game.game_engines << engine
+    end
   end
 end
