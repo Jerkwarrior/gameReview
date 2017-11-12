@@ -13,13 +13,15 @@ class GetCompanyJob < ApplicationJob
     company.website = ig&.website
     company.save!
 
-    ig.developed.each do |game_id|
-      GetGameJob.perform_later(game_id)
+    ig.developed&.each do |game_id|
+      GetGameJob.perform_now(game_id)
     end
-    ig.published.each do |game_id|
-      GetGameJob.perform_later(game_id)
+
+    ig.published&.each do |game_id|
+      GetGameJob.perform_now(game_id)
     end
-    GetDeveloperJob.perform_later(igdb_id)
-    GetPublisherJob.perform_later(igdb_id)
+
+    GetDeveloperJob.perform_now(igdb_id)
+    GetPublisherJob.perform_now(igdb_id)
   end
 end
