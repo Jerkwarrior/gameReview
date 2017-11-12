@@ -1,16 +1,16 @@
 RSpec.describe GetThemeJob, vcr: true, type: :job do
 
   before(:each) do
-    GetThemeJob.perform_now(1)
-    @theme = Theme.where(id: 1)
+    @game = create(:game, id: 20)
+    GetThemeJob.perform_now(20)
   end
 
-  it 'gets a game theme' do
-    expect(@theme.length).to eq 1
+  it 'gets the correct theme length' do
+    expect(@game.themes.length).to eq 2
   end
 
   it 'gets a game theme name' do
-    expect(@theme.first.name).to eq "Action"
+    expect(@game.themes.first.name).to eq "Action"
   end
 
 end

@@ -8,7 +8,7 @@ class GetCompanyJob < ApplicationJob
     company.name = ig.name
     company.slug = ig.slug
     company.logo_url = ig.logo&.url
-    company.description = ig.description
+    company.description = ig&.description
     company.country = ig&.country
     company.website = ig&.website
     company.save!

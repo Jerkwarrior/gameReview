@@ -6,7 +6,7 @@ class GetGenreJob < ApplicationJob
     game = Game.find(igdb_id)
     ig.genres&.each do |genre_id|
       ig_genre = Igdb::Genre.find(genre_id)
-      genre = Genre.new(id: genre_id)
+      genre = Genre.find_or_create_by(id: genre_id)
       genre.name = ig_genre.name
       genre.save!
       game.genres << genre

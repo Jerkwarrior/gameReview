@@ -1,16 +1,19 @@
 RSpec.describe GetGenreJob, vcr: true, type: :job do
 
   before(:each) do
-    GetGenreJob.perform_now(4)
-    @genre = Genre.where(id: 4)
+    @game = create(:game, id: 21)
+    GetGenreJob.perform_now(21)
   end
 
-  it 'gets a game genre' do
-    expect(@genre.length).to eq 1
+  it 'gets the game genres' do
+    @game.genres.each do |genre|
+      puts genre.name
+    end
+    expect(@game.genres.length).to eq 2
   end
 
   it 'gets a game genre name' do
-    expect(@genre.first.name).to eq "Fighting"
+    expect(@game.genres.first.name).to eq "Shooter"
   end
 
 end

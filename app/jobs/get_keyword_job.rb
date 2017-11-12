@@ -6,7 +6,9 @@ class GetKeywordJob < ApplicationJob
     game = Game.find(igdb_id)
     ig.keywords&.each do |keyword_id|
       ig_keyword = Igdb::Keyword.find(keyword_id)
-      Keyword.find_or_create_by(id: keyword_id, name: ig_keyword.name)
+      keyword = Keyword.find_or_create_by(id: keyword_id)
+      keyword.name = ig_keyword.name
+      keyword.save!
       game.keywords << keyword
     end
   end

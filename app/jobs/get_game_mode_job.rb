@@ -6,7 +6,7 @@ class GetGameModeJob < ApplicationJob
     game = Game.find(igdb_id)
     ig.game_modes&.each do |mode_id|
       ig_mode = Igdb::GameMode.find(mode_id)
-      mode = GameMode.new(id: mode_id)
+      mode = GameMode.find_or_create_by(id: mode_id)
       mode.name = ig_mode.name
       mode.save!
       game.game_modes << mode

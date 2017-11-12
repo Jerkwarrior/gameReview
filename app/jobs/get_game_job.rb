@@ -32,13 +32,14 @@ class GetGameJob < ApplicationJob
       vid.save!
     end
 
+    game.save!
+
     GetKeywordJob.perform_now(igdb_id)
     GetGameEngineJob.perform_now(igdb_id)
     GetGameModeJob.perform_now(igdb_id)
     GetGenreJob.perform_now(igdb_id)
-    GetThemeJob.perform_now(igdb_id)
     GetPlatformJob.perform_now(igdb_id)
+    GetThemeJob.perform_now(igdb_id)
 
-    game.save!
   end
 end
