@@ -5,6 +5,7 @@ RSpec.describe GetPublisherJob, vcr: true, type: :job do
     create(:game, id: 22975)
     create(:game, id: 13784)
     create(:game, id: 25299)
+    create(:game, id: 22963)
     GetPublisherJob.perform_now(2)
   end
 
