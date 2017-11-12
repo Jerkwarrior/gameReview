@@ -74,6 +74,8 @@ ActiveRecord::Schema.define(version: 20171106100903) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "player_perspective_id"
+    t.index ["player_perspective_id"], name: "index_games_on_player_perspective_id"
   end
 
   create_table "games_genres", id: false, force: :cascade do |t|
@@ -100,8 +102,6 @@ ActiveRecord::Schema.define(version: 20171106100903) do
   create_table "games_player_perspectives", id: false, force: :cascade do |t|
     t.integer "game_id", null: false
     t.integer "player_perspective_id", null: false
-    t.index ["game_id", nil], name: "index_games_player_perspectives_on_game_id_and_perspective_id"
-    t.index [nil, "game_id"], name: "index_games_player_perspectives_on_perspective_id_and_game_id"
   end
 
   create_table "games_themes", id: false, force: :cascade do |t|
