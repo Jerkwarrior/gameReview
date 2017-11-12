@@ -1,4 +1,5 @@
 class GetGameModeJob < ApplicationJob
+  queue_as :default
 
   def perform(igdb_id)
     return if GameMode.where(id: igdb_id).exists?

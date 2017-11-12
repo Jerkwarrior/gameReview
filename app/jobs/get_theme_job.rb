@@ -1,4 +1,5 @@
 class GetThemeJob < ApplicationJob
+  queue_as :default
 
   def perform(igdb_id)
     return if Theme.where(id: igdb_id).exists?

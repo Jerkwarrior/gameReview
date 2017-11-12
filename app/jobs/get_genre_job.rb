@@ -1,4 +1,5 @@
 class GetGenreJob < ApplicationJob
+  queue_as :default
 
   def perform(igdb_id)
     return if Genre.where(id: igdb_id).exists?
