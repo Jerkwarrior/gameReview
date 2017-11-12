@@ -29,13 +29,13 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 12 Nov 2017 17:28:57 GMT
+      - Sun, 12 Nov 2017 17:28:55 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1693'
       Connection:
       - keep-alive
     body:
@@ -43,7 +43,7 @@ http_interactions:
       string: !binary |-
         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
     http_version: 
-  recorded_at: Sun, 12 Nov 2017 17:28:57 GMT
+  recorded_at: Sun, 12 Nov 2017 17:28:55 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/keywords/85/?fields=*
@@ -73,7 +73,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 12 Nov 2017 17:28:58 GMT
+      - Sun, 12 Nov 2017 17:28:56 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -87,7 +87,7 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/3WOwQ6DIBBEf6XZ81ZdARF+xZjGCqEkKgYwHpr+e0naQy+97GFn5s0MT/AGdC8Qtmm1oGGz4bIFHwFhjnbK1tymDJoYl0xyyZWUxXzs5p+UlsN9ONcv54hLeTxy3pOu6/M8K+/MvZrDWs+F4kL0NtU/AVemJNADtarBjrUCqUdSqLoGqTQRklBULmddi21Dohlf4xuOu1GSzAAAAA==
     http_version: 
-  recorded_at: Sun, 12 Nov 2017 17:28:58 GMT
+  recorded_at: Sun, 12 Nov 2017 17:28:56 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/keywords/1136/?fields=*
@@ -117,7 +117,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 12 Nov 2017 17:28:58 GMT
+      - Sun, 12 Nov 2017 17:28:56 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -131,5 +131,5 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/3WNS2rDYAyE76L1EEv/U/JVQiiubVxDEgc/8KL07lWh0FU3g2ZG+nT9pHmgViQW0LN7jNTSc5lXAvXr2O3j8Nbt3icuUVPOappAx2v4r9rux/THONa7m499f21t05zneZmn4f3SL4+md8K0rPO4Nb/Lk7/fqL2KQtgghmAWYYUhKqhWApIHUaO3wRg5J++FC7RogNafyfxQVK1AYgjRWZyq06JmuLeKkKy6Fs0M4yQuTnTxkEX59nX7Bm2cK6wYAQAA
     http_version: 
-  recorded_at: Sun, 12 Nov 2017 17:28:58 GMT
+  recorded_at: Sun, 12 Nov 2017 17:28:56 GMT
 recorded_with: VCR 3.0.3

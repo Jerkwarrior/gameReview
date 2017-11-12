@@ -7,7 +7,7 @@ class GetPlatformJob < ApplicationJob
     ig.release_dates&.each do |date|
       plat_id = date.platform
       ig_platform = Igdb::Platform.find(plat_id)
-      platform = Platform.new(id: plat_id)
+      platform = Platform.find_or_create_by(id: plat_id)
       platform.name = ig_platform.name
       platform.logo_url = ig_platform.logo&.url
       platform.save!

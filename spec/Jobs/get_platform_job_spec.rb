@@ -1,20 +1,20 @@
 RSpec.describe GetPlatformJob, vcr: true, type: :job do
 
   before(:each) do
-    GetPlatformJob.perform_now(7)
-    @platform = Platform.where(id: 7)
+    @game = create(:game, id: 25)
+    GetPlatformJob.perform_now(25)
   end
 
-  it 'gets a platform' do
-    expect(@platform.length).to eq 1
+  it 'gets the correct platform length' do
+    expect(@game.platforms.length).to eq 3
   end
 
   it 'gets a game platform name' do
-    expect(@platform.first.name).to eq "PlayStation"
+    expect(@game.platforms.first.name).to eq "PC (Microsoft Windows)"
   end
 
   it 'gets a game platform logo' do
-    expect(@platform.first.logo_url).to eq "//images.igdb.com/igdb/image/upload/t_thumb/ptlxti6tzdpma71s5tkm.jpg"
+    expect(@game.platforms.first.logo_url).to eq "//images.igdb.com/igdb/image/upload/t_thumb/e9w12ei09dljpsiwz7pv.jpg"
   end
 
 end
