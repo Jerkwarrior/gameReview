@@ -13,8 +13,8 @@ class GetGameJob < ApplicationJob
     game.name = ig.name
     game.slug = ig.slug
     game.summary = ig.summary
-    game.franchise = ig.franchise
-    game.collection = ig.collection
+    game.franchise_id = ig.franchise
+    game.collection_id = ig.collection
     game.popularity = ig.popularity # TODO Should be float
     game.category = ig.category
     game.status = ig.status

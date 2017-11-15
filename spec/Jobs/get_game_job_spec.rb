@@ -28,11 +28,11 @@ RSpec.describe GetGameJob, vcr: true, type: :job do
   end
 
   it 'gets the game franchise' do
-    expect(@mario.first.franchise).to eq 24
+    expect(@mario.first.franchise_id).to eq 24
   end
 
   it 'gets the game collection' do
-    expect(@mario.first.collection).to eq 240
+    expect(@mario.first.collection_id).to eq 240
   end
 
   it 'gets the game popularity' do

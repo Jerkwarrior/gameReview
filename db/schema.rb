@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171106100903) do
+ActiveRecord::Schema.define(version: 20171115124642) do
+
+  create_table "collections", force: :cascade do |t|
+    t.string "name"
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -28,6 +35,13 @@ ActiveRecord::Schema.define(version: 20171106100903) do
     t.integer "game_id"
     t.index ["company_id"], name: "index_developers_on_company_id"
     t.index ["game_id"], name: "index_developers_on_game_id"
+  end
+
+  create_table "franchises", force: :cascade do |t|
+    t.string "name"
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "game_engines", force: :cascade do |t|
@@ -62,8 +76,8 @@ ActiveRecord::Schema.define(version: 20171106100903) do
     t.string "slug"
     t.string "url"
     t.text "summary"
-    t.integer "collection"
-    t.integer "franchise"
+    t.integer "collection_id"
+    t.integer "franchise_id"
     t.integer "popularity"
     t.integer "game"
     t.integer "category"
@@ -75,6 +89,8 @@ ActiveRecord::Schema.define(version: 20171106100903) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "player_perspective_id"
+    t.index ["collection_id"], name: "index_games_on_collection_id"
+    t.index ["franchise_id"], name: "index_games_on_franchise_id"
     t.index ["player_perspective_id"], name: "index_games_on_player_perspective_id"
   end
 
