@@ -11,4 +11,7 @@ class Game < ApplicationRecord
 
   has_many :companies, through: :developers
   has_many :companies, through: :publishers
+
+  belongs_to :franchise, required: false
+  belongs_to :collection, required: false
 end

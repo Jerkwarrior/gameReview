@@ -16,7 +16,7 @@ http_interactions:
       Content-Type:
       - text/json
       User-Key:
-      - 3b868c9ddb1149bd772e6921ae2813a3
+      - "<api_key_is_hidden>"
       Host:
       - api-2445582011268.apicast.io
   response:
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 12 Nov 2017 13:27:32 GMT
+      - Wed, 15 Nov 2017 15:35:11 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -43,5 +43,5 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/3WPywrCQAxFf0Wy7mv6sO2sBT/AZSll7ITpYF/MwyLivxtBdKOBBMLlnuQ2d9ASeJoEMIsJgcNBmIvVEndH2ncn56VeLATQGxQOZScccJbWdbovWFInCTn9Kr9SzsqCqszyqgrAjl4RVL6hoSJoaD9Qb0ZSB+dWy+N427ZIK3mO+mWKqVcxa7TxP7N1wrjudbrraajF3IDTO/0gZoU/BIlXHJcVKXCTsoBlZdk+2icAwpJ7AwEAAA==
     http_version: 
-  recorded_at: Sun, 12 Nov 2017 13:27:33 GMT
+  recorded_at: Wed, 15 Nov 2017 15:35:11 GMT
 recorded_with: VCR 3.0.3

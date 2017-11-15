@@ -15,12 +15,11 @@ class GetGameJob < ApplicationJob
     game.summary = ig.summary
     game.franchise_id = ig.franchise
     game.collection_id = ig.collection
-    game.popularity = ig.popularity # TODO Should be float
+    game.popularity = ig.popularity
     game.category = ig.category
     game.status = ig.status
-    game.cover_url = ig.cover&.url # TODO This is thumb, needs to be cover_big
+    game.cover_url = ig.cover&.url
     game.release_date_human = ig.release_dates&.first&.human
-    # TODO pegi_rating, steam_id, not part of gem?
 
     ig.screenshots&.each do |image|
       img = Image.new(game_id: igdb_id, url: image.url)
@@ -34,12 +33,13 @@ class GetGameJob < ApplicationJob
 
     game.save!
 
-    GetKeywordJob.perform_now(igdb_id)
-    GetGameEngineJob.perform_now(igdb_id)
-    GetGameModeJob.perform_now(igdb_id)
-    GetGenreJob.perform_now(igdb_id)
-    GetPlatformJob.perform_now(igdb_id)
-    GetThemeJob.perform_now(igdb_id)
-
+    GetKeywordJob.perform_later(igdb_id)
+    GetGameEngineJob.perform_later(igdb_id)
+    GetGameModeJob.perform_later(igdb_id)
+    GetGenreJob.perform_later(igdb_id)
+    GetPlatformJob.perform_later(igdb_id)
+    GetThemeJob.perform_later(igdb_id)
+    GetFranchiseJob.perform_later(igdb_id)
+    GetCollectionJob.perform_later(igdb_id)
   end
 end
