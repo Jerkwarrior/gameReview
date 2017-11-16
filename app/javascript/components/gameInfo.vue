@@ -8,7 +8,7 @@
         <li>First released: {{game.release_date_human}}</li>
         <li>Game Modes: {{game.game_modes}}</li>
         <li>platforms: {{game.platforms}}</li>
-        <li>{{game.player_perspectives}} {{game.themes}} {{game.keywords}}</li>
+        <li>{{game.perspectives}} {{game.themes}} {{game.keywords}}</li>
       </ul>
       <!-- <p>Developers:</p>
       <a href="#">Developers</a>

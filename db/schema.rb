@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171116092618) do
+ActiveRecord::Schema.define(version: 20171116130752) do
 
   create_table "collections", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -88,10 +88,8 @@ ActiveRecord::Schema.define(version: 20171116092618) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "player_perspective_id"
     t.index ["collection_id"], name: "index_games_on_collection_id"
     t.index ["franchise_id"], name: "index_games_on_franchise_id"
-    t.index ["player_perspective_id"], name: "index_games_on_player_perspective_id"
   end
 
   create_table "games_genres", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -108,16 +106,18 @@ ActiveRecord::Schema.define(version: 20171116092618) do
     t.index ["keyword_id", "game_id"], name: "index_games_keywords_on_keyword_id_and_game_id"
   end
 
+  create_table "games_perspectives", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "game_id", null: false
+    t.bigint "perspective_id", null: false
+    t.index ["game_id", "perspective_id"], name: "index_games_perspectives_on_game_id_and_perspective_id"
+    t.index ["perspective_id", "game_id"], name: "index_games_perspectives_on_perspective_id_and_game_id"
+  end
+
   create_table "games_platforms", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "game_id", null: false
     t.integer "platform_id", null: false
     t.index ["game_id", "platform_id"], name: "index_games_platforms_on_game_id_and_platform_id"
     t.index ["platform_id", "game_id"], name: "index_games_platforms_on_platform_id_and_game_id"
-  end
-
-  create_table "games_player_perspectives", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "game_id", null: false
-    t.integer "player_perspective_id", null: false
   end
 
   create_table "games_themes", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -147,15 +147,15 @@ ActiveRecord::Schema.define(version: 20171116092618) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "platforms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "perspectives", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
-    t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "player_perspectives", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "platforms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
+    t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

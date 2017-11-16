@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :player_perspective do
+  factory :perspective do
     name "MyString"
   end
 end
