@@ -10,9 +10,6 @@ RSpec.describe GetPublisherJob, vcr: true, type: :job do
   end
 
   it 'gets a publisher' do
-    expect(Publisher.all.length).to eq 4
-    expect(Publisher.first.company_id).to eq 2
-    expect(Publisher.first.game_id).to eq 13784
-    expect(Publisher.last.game_id).to eq 22975
+    expect(Publisher.where(company_id: 2).length).to eq 4
   end
 end

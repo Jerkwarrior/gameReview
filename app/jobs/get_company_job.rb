@@ -3,6 +3,11 @@ class GetCompanyJob < ApplicationJob
 
   def perform(igdb_id)
     return if Company.where(id: igdb_id).exists?
+    begin
+      ig = Igdb::Company.find(igdb_id)
+    rescue NoMethodError
+      return
+    end
     ig = Igdb::Company.find(igdb_id)
     company = Company.new(id: igdb_id)
     company.name = ig.name

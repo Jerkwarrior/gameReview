@@ -36,7 +36,7 @@ RSpec.describe GetGameJob, vcr: true, type: :job do
   end
 
   it 'gets the game popularity' do
-    expect(@game.first.popularity).to eq 8
+    expect(@game.first.popularity).to eq 9
   end
 
   it 'gets the game category' do

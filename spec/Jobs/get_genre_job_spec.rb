@@ -6,9 +6,6 @@ RSpec.describe GetGenreJob, vcr: true, type: :job do
   end
 
   it 'gets the game genres' do
-    @game.genres.each do |genre|
-      puts genre.name
-    end
     expect(@game.genres.length).to eq 2
   end
 
