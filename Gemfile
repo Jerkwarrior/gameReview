@@ -28,6 +28,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'spring-commands-rspec'
 end
 
 group :development do
@@ -35,7 +36,6 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'spring-commands-rspec'
 end
 
 group :production do
