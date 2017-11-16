@@ -1,10 +1,7 @@
 language: ruby
 cache: bundler
-script:
-  rake db:drop
-  rake db:create
-  rake db:schema:load
-  bundle exec rspec
+services:
+  - mysql
 
 rvm:
   - 2.3.4
