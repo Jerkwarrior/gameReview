@@ -1,6 +1,7 @@
 require 'webmock/rspec'
 
 VCR.configure do |c|
+  c.ignore_localhost = true
   c.cassette_library_dir = 'spec/vcr_cassettes'
   c.hook_into :webmock
   c.filter_sensitive_data('<api_key_is_hidden>') { ENV['IGDB_API_KEY'] }
