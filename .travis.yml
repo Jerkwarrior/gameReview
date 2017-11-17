@@ -5,6 +5,7 @@ services:
 before_install:
   - mysql -e 'CREATE DATABASE game_test;'
 script:
+  - mysql.server start
   - bundle exec rspec
 
 rvm:
