@@ -41,5 +41,6 @@ class GetGameJob < ApplicationJob
     GetThemeJob.perform_later(igdb_id)
     GetFranchiseJob.perform_later(igdb_id)
     GetCollectionJob.perform_later(igdb_id)
+    GetPerspectiveJob.perform_later(igdb_id)
   end
 end
