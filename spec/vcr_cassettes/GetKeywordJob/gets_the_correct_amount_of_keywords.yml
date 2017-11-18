@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:35 GMT
+      - Sat, 18 Nov 2017 10:20:59 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -43,7 +43,7 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/61XzY7bNhB+FUaXXmRb/z++FFgELdpgmwJJD0UQGJRES1xTpExSVrxBgGL3CXop0EvvzQMUaNGnqV+kQ8re9WbtBVrkIovk8JtvvhmO6DfvHVo58zDOXIfjljhz51XfEYkusaQCXUihpo7rKNbXsKTM0qQ1S5MClmCllwwWGq07NZ/NhmGY0roqpqVoZzXgqdmJPaUkWJNqgbUz90PPC5MgDALP8wCuq+6XYt+LA8+PksQLgEPfAsoWvD0XaCt61OANQUODNaIaabwiCmmBlJnVDUGXvWqkEC36XlJeEqW+RD+K/p+ffmVs3ArGuqF8hZZYaYR5hVoB02RDuJ0CFcAEIukY0QaTKrTuidLP0OtT+AjWC0J5jRrCKlTiTlPAK7aWDtlQhl4I0WGkJS0IEkuke6kZUVP0jQZeCvWd8Whigx9JVNkTwJJoKcGNASlZr8sGAjWbYTzivTA+C7IUEljSliDZczDp9RRd9FadQXBwoMEIEay2U/RaoJroUQJyF4FrfD9UqGS0LUCYnmtMOViUkEOFFMC4CG8ErVAhtBYtMwp0VMP0ktaNBoqHAJESrKJEKisyRo1QZhkVDJcr1OKalqAJ7iB/JpuCsy1YHcVWYo4qEFCRO6kwF9pIwwWfKC06hCvIG/gj92o9quRnppS1kFtGuSn1CzEoIl20Mk6OJYUgGgwJ5RtckephORlGlWhdGww45GCAQTGbH6rpNeFjIWrByVgqNiIYQbUKG0wBJ2Bld6iOMObe19BrgSvYKdjIoCBQjEyUK+NkwFughEbWXyhAUqCuTaYkhgnqCC7JIauPGY9StD3IfxBLg0lfN4jYnJUNREJ4bfQYhGQVCAGQDeqwpbBHLiRt0UB1A4XBzUEZM6sInGxtG0YpAKfUVHBnHkRwsJcS8xJOEDHjo6Fy5m+C6K3rSKzBqzPP4mmaeHke+UkchCkc/E50PQPmGs5+Nk1j19FCY7Y4v+N4fVGa2oUWFyUHJw+mbJcCEr6fur6X2ocHDy/MzWvmxknsxnEaB2YYun7up5EbJlmSAWuNa7vZDZIsCuMoidwY1lI/jPZvQZ7441voBdHdW3z3lljcNPKzwCBCnRMmoHANbhT4MNX1BaOqGadSD2ZKaJK1MM0QpO0Y3hK5MFs6o/nGxmM0NbEtWlGRPUeYWpEtJLayFmHgBl6Uu4HvB+YRmofZBznei2JACJd2YNgtqVR6IQmD808Wplc78yiPIx8y4NkODrmClb3CiWWnoTO1Fg58gafI9UFWg30MZAzeP4rM7oVvQQ7KWG9pFCRe5u29NX2LocQcP8/Dybc9m/gRVN/WbMhD14Gd6Qf3LCqQ2aPmQRLkUfQYNZ9c4u3E9+5Qc4saP4UaHVAhsUnqJ9knsPCpiyZfkeKOrJmwsMETsKCZcxA8i6DYH5HN4snLUk/87EA2iy2q7z0BG/v3sMd5fAD7inQTP/wENv8AGcQMjj/HpuoWfH+U3h+uErubP3e3f+9uf7bP33a3H3c3H3e3v+xuf9/d/GEmb/5CQqJXlxeOAVPQP6B7NkKPMOPlYjaj8I2Az+TdzcK8jJOzvmPQMWd6oYFwMeNwxSiWCq9XXRGUWZW8C5fTq642LYmJvqIcrhALc+VxTpmC2UAr3UAmMshIY7siDMLMKPjf6RSKsyBdX7dlsWwVXF+6pDtD55Tp56azbkiv67Lerpr1UuTratWmZ+icMv3cdLB/RZqhY9yjw6q8LuvC52fonDL93HSgz3HKGX3nd5uUDYSHa3aGzinTJ+hAaW9oRcSDw/E1/JjWjeySszcZ8Yfgu6sfni9fdoGwB6OEi6l05v8nqm29vOYtu1ZDsC2iqyxbs82ZqE6Z3kcV2a6wjyqOoac4RMnCsFJbLjpFITzHuf+Sh2AxkELRx709OP7jAP8bQExNeCWmA11RbCMybzN7g1vYa8ti/C/ysJOFn/4BIdxCdKQCGCHrszBvP7z9F1vWuUn8DAAA
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:35 GMT
+  recorded_at: Sat, 18 Nov 2017 10:20:59 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/games/358/?fields=*
@@ -73,7 +73,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:35 GMT
+      - Sat, 18 Nov 2017 10:20:59 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -87,7 +87,51 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/61XzY7bNhB+FUaXXmRb/z++FFgELdpgmwJJD0UQGJRES1xTpExSVrxBgGL3CXop0EvvzQMUaNGnqV+kQ8re9WbtBVrkIovk8JtvvhmO6DfvHVo58zDOXIfjljhz51XfEYkusaQCXUihpo7rKNbXsKTM0qQ1S5MClmCllwwWGq07NZ/NhmGY0roqpqVoZzXgqdmJPaUkWJNqgbUz90PPC5MgDALP8wCuq+6XYt+LA8+PksQLgEPfAsoWvD0XaCt61OANQUODNaIaabwiCmmBlJnVDUGXvWqkEC36XlJeEqW+RD+K/p+ffmVs3ArGuqF8hZZYaYR5hVoB02RDuJ0CFcAEIukY0QaTKrTuidLP0OtT+AjWC0J5jRrCKlTiTlPAK7aWDtlQhl4I0WGkJS0IEkuke6kZUVP0jQZeCvWd8Whigx9JVNkTwJJoKcGNASlZr8sGAjWbYTzivTA+C7IUEljSliDZczDp9RRd9FadQXBwoMEIEay2U/RaoJroUQJyF4FrfD9UqGS0LUCYnmtMOViUkEOFFMC4CG8ErVAhtBYtMwp0VMP0ktaNBoqHAJESrKJEKisyRo1QZhkVDJcr1OKalqAJ7iB/JpuCsy1YHcVWYo4qEFCRO6kwF9pIwwWfKC06hCvIG/gj92o9quRnppS1kFtGuSn1CzEoIl20Mk6OJYUgGgwJ5RtckephORlGlWhdGww45GCAQTGbH6rpNeFjIWrByVgqNiIYQbUKG0wBJ2Bld6iOMObe19BrgSvYKdjIoCBQjEyUK+NkwFughEbWXyhAUqCuTaYkhgnqCC7JIauPGY9StD3IfxBLg0lfN4jYnJUNREJ4bfQYhGQVCAGQDeqwpbBHLiRt0UB1A4XBzUEZM6sInGxtG0YpAKfUVHBnHkRwsJcS8xJOEDHjo6Fy5m+C6K3rSKzBqzPP4mmaeHke+UkchCkc/E50PQPmGs5+Nk1j19FCY7Y4v+N4fVGa2oUWFyUHJw+mbJcCEr6fur6X2ocHDy/MzWvmxknsxnEaB2YYun7up5EbJlmSAWuNa7vZDZIsCuMoidwY1lI/jPZvQZ7441voBdHdW3z3lljcNPKzwCBCnRMmoHANbhT4MNX1BaOqGadSD2ZKaJK1MM0QpO0Y3hK5MFs6o/nGxmM0NbEtWlGRPUeYWpEtJLayFmHgBl6Uu4HvB+YRmofZBznei2JACJd2YNgtqVR6IQmD808Wplc78yiPIx8y4NkODrmClb3CiWWnoTO1Fg58gafI9UFWg30MZAzeP4rM7oVvQQ7KWG9pFCRe5u29NX2LocQcP8/Dybc9m/gRVN/WbMhD14Gd6Qf3LCqQ2aPmQRLkUfQYNZ9c4u3E9+5Qc4saP4UaHVAhsUnqJ9knsPCpiyZfkeKOrJmwsMETsKCZcxA8i6DYH5HN4snLUk/87EA2iy2q7z0BG/v3sMd5fAD7inQTP/wENv8AGcQMjj/HpuoWfH+U3h+uErubP3e3f+9uf7bP33a3H3c3H3e3v+xuf9/d/GEmb/5CQqJXlxeOAVPQP6B7NkKPMOPlYjaj8I2Az+TdzcK8jJOzvmPQMWd6oYFwMeNwxSiWCq9XXRGUWZW8C5fTq642LYmJvqIcrhALc+VxTpmC2UAr3UAmMshIY7siDMLMKPjf6RSKsyBdX7dlsWwVXF+6pDtD55Tp56azbkiv67Lerpr1UuTratWmZ+icMv3cdLB/RZqhY9yjw6q8LuvC52fonDL93HSgz3HKGX3nd5uUDYSHa3aGzinTJ+hAaW9oRcSDw/E1/JjWjeySszcZ8Yfgu6sfni9fdoGwB6OEi6l05v8nqm29vOYtu1ZDsC2iqyxbs82ZqE6Z3kcV2a6wjyqOoac4RMnCsFJbLjpFITzHuf+Sh2AxkELRx709OP7jAP8bQExNeCWmA11RbCMybzN7g1vYa8ti/C/ysJOFn/4BIdxCdKQCGCHrszBvP7z9F1vWuUn8DAAA
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:35 GMT
+  recorded_at: Sat, 18 Nov 2017 10:20:59 GMT
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/collections/375/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - "<api_key_is_hidden>"
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 18 Nov 2017 10:20:59 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '172'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/3WOsQ6DIBiEX8X8QyeqgCLI2L1PYEyDQKwJihGIQ9N3LyZdOnT7cpf7cv0LZgOy5gzBqhYLEu4+rbG4FDenjAUEercqWvNQESSpW44ZoQxzihGkzfyrgktTli2n7Dp+VWl3OXvGuAVZVcdxlPNkxlL7pdLeOavj7NdQ/Y6mfCuA7AXvKOpaLBDFlCHBW3ISySQaRBvG6+E9fAA8KcnP0QAAAA==
+    http_version: 
+  recorded_at: Sat, 18 Nov 2017 10:20:59 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/games/358/?fields=*
@@ -117,7 +161,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:35 GMT
+      - Sat, 18 Nov 2017 10:20:59 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -131,10 +175,10 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/61XzY7bNhB+FUaXXmRb/z++FFgELdpgmwJJD0UQGJRES1xTpExSVrxBgGL3CXop0EvvzQMUaNGnqV+kQ8re9WbtBVrkIovk8JtvvhmO6DfvHVo58zDOXIfjljhz51XfEYkusaQCXUihpo7rKNbXsKTM0qQ1S5MClmCllwwWGq07NZ/NhmGY0roqpqVoZzXgqdmJPaUkWJNqgbUz90PPC5MgDALP8wCuq+6XYt+LA8+PksQLgEPfAsoWvD0XaCt61OANQUODNaIaabwiCmmBlJnVDUGXvWqkEC36XlJeEqW+RD+K/p+ffmVs3ArGuqF8hZZYaYR5hVoB02RDuJ0CFcAEIukY0QaTKrTuidLP0OtT+AjWC0J5jRrCKlTiTlPAK7aWDtlQhl4I0WGkJS0IEkuke6kZUVP0jQZeCvWd8Whigx9JVNkTwJJoKcGNASlZr8sGAjWbYTzivTA+C7IUEljSliDZczDp9RRd9FadQXBwoMEIEay2U/RaoJroUQJyF4FrfD9UqGS0LUCYnmtMOViUkEOFFMC4CG8ErVAhtBYtMwp0VMP0ktaNBoqHAJESrKJEKisyRo1QZhkVDJcr1OKalqAJ7iB/JpuCsy1YHcVWYo4qEFCRO6kwF9pIwwWfKC06hCvIG/gj92o9quRnppS1kFtGuSn1CzEoIl20Mk6OJYUgGgwJ5RtckephORlGlWhdGww45GCAQTGbH6rpNeFjIWrByVgqNiIYQbUKG0wBJ2Bld6iOMObe19BrgSvYKdjIoCBQjEyUK+NkwFughEbWXyhAUqCuTaYkhgnqCC7JIauPGY9StD3IfxBLg0lfN4jYnJUNREJ4bfQYhGQVCAGQDeqwpbBHLiRt0UB1A4XBzUEZM6sInGxtG0YpAKfUVHBnHkRwsJcS8xJOEDHjo6Fy5m+C6K3rSKzBqzPP4mmaeHke+UkchCkc/E50PQPmGs5+Nk1j19FCY7Y4v+N4fVGa2oUWFyUHJw+mbJcCEr6fur6X2ocHDy/MzWvmxknsxnEaB2YYun7up5EbJlmSAWuNa7vZDZIsCuMoidwY1lI/jPZvQZ7441voBdHdW3z3lljcNPKzwCBCnRMmoHANbhT4MNX1BaOqGadSD2ZKaJK1MM0QpO0Y3hK5MFs6o/nGxmM0NbEtWlGRPUeYWpEtJLayFmHgBl6Uu4HvB+YRmofZBznei2JACJd2YNgtqVR6IQmD808Wplc78yiPIx8y4NkODrmClb3CiWWnoTO1Fg58gafI9UFWg30MZAzeP4rM7oVvQQ7KWG9pFCRe5u29NX2LocQcP8/Dybc9m/gRVN/WbMhD14Gd6Qf3LCqQ2aPmQRLkUfQYNZ9c4u3E9+5Qc4saP4UaHVAhsUnqJ9knsPCpiyZfkeKOrJmwsMETsKCZcxA8i6DYH5HN4snLUk/87EA2iy2q7z0BG/v3sMd5fAD7inQTP/wENv8AGcQMjj/HpuoWfH+U3h+uErubP3e3f+9uf7bP33a3H3c3H3e3v+xuf9/d/GEmb/5CQqJXlxeOAVPQP6B7NkKPMOPlYjaj8I2Az+TdzcK8jJOzvmPQMWd6oYFwMeNwxSiWCq9XXRGUWZW8C5fTq642LYmJvqIcrhALc+VxTpmC2UAr3UAmMshIY7siDMLMKPjf6RSKsyBdX7dlsWwVXF+6pDtD55Tp56azbkiv67Lerpr1UuTratWmZ+icMv3cdLB/RZqhY9yjw6q8LuvC52fonDL93HSgz3HKGX3nd5uUDYSHa3aGzinTJ+hAaW9oRcSDw/E1/JjWjeySszcZ8Yfgu6sfni9fdoGwB6OEi6l05v8nqm29vOYtu1ZDsC2iqyxbs82ZqE6Z3kcV2a6wjyqOoac4RMnCsFJbLjpFITzHuf+Sh2AxkELRx709OP7jAP8bQExNeCWmA11RbCMybzN7g1vYa8ti/C/ysJOFn/4BIdxCdKQCGCHrszBvP7z9F1vWuUn8DAAA
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:35 GMT
+  recorded_at: Sat, 18 Nov 2017 10:20:59 GMT
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/keywords/4392/?fields=*
+    uri: https://api-2445582011268.apicast.io/games/358/?fields=*
     body:
       encoding: US-ASCII
       string: ''
@@ -161,21 +205,21 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:35 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '477'
+      - '1497'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/games/19/?fields=*
@@ -205,24 +249,24 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '1693'
+      - '1689'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAC/7VYW2/jthL+K4Re+iLbul/yFnR70Bxg2wJnX4qehUFLtMREIlWSsqxd7H/vR/oaN0m7vSBIIJEz8818M6Rm8stnj9feXVj6nqA98+6893RPfqKzYCS6Ix9aRv5Du478uCXnDc/3dDc2kO3pfjHYpUW0MC1bbCG6kNvFeR2io+og2Roz6LvVapqmJW/qzbKS/aoBol79GSOVYtSwek0NfI3KPCvirAyDIID9ob5spWGQhHkRhWGewMux76manwdFuCaUmJarejEwpaUgupXSMOUTLsjU8qrFNiNDR2emCNUww7RbUrJjRF5R4ZPNaAjttHTisKzJeyko+R8kYI2SLZtIx3as00vyILjhiG72rwC+0WRidIAbzrGy78nAtZHdktw71JkMSjaKae0fVSBXVXgnEtvqqK6BV3VjzUVzXG+pqJtRQA0BmuPTuOlp1XIwcVhAeHTsDFF82zErIDhYOb/ChLODzCg5iRPWknyQpJc75gKxeQQJUjTXgdl4EEYNSqlx64LtDZGbR1YZDlW7D6tj01pCv7EBIAuCdrAsZCebkV2lxHLOsY9k64PJFgacSW3YoG2QI9A2bGkL1Eg1dwgTyX8Q5Cr/z1yspDBIqr7OKHImVY/Nd9/dE9owYeyC0/rh55/eOUogMzbcRbFViL52Iv2oauihQKxrG6ahqTiz8vjdsq6TEyAHct+xPSicJJkZtencIjCHgEoRRlsT9m3LFWxYen3nYYvyqjqoANBF74iHbfsM21QcXKyZOXC8JN+jatmIwrOscdOey9MHibInQOmZsTQ7WhTbcTnqIyY9FqCGhEShGwljWnYIm1ru9MAVrWbrbo0D2jpfNswoOtPOh/vClaO1/CAEQvyWK/h/QquYTbjV5vYQdTZxlew667sU3l0R+h7yDRN4TpZZmMdBGiRxEgSR7w1yGDuquMEBj5e4CWiDU9K4y+BKKyrSPEwOf+MXhNaVHAXujtz3jDS0u9ZN0jANyixL0jSP0ucCJ70ozE5enpcCXKfucvPufgkLv8wCPyqiIPHDMkjxmKYR/gZR6edxir0sLCM/hFYYZNFH4NDGqfqR3SySOE2y0E/jrMiDsswPT7BXQCGP8yQsogxqtb1npL3UoAyqsDSMm47r9rAUlR8Pfq2ZaHA27FqW+2HuJyF2KrDSSHtfgkzDIWbkesPsxfrZQ+mZDltREiAapKkfOlSZXYqLMAu+AMudqbXFHw7l50BPmL2sD4Rg4YnNk1S1fS1SPwxj6z5K4kgZ4rZaTCj3bgNxR2GtGKpfs7W98nHdB1kWFGA3cF8C4Bt7dF1YMOqDnsi3MV+r2d3Pz2M9KXp3SOXFdAmaj6ZRMq4iUZDt2FM8eVEQxIsfK7OIEpStZQYLvtdb3S/+qwhw6wJR5mGR3EBENxA/yN0iSm8hwjcgigtCHsRRHP0BwjtWLYLoFiH6swhpESV/QJNDSL8G4ZqmfwniWa6vyug1mmyuw6/K9QUhLMsEx/UGoXiGUCz+S8UiuCAUB4S3WIrOCCAoL4O3i6lc3A9qEeVnhNIhJH8HIfzXEeK/i1CeAeI4LeK3SQqjxXs6L4LwBGD9g5H0C+4RjT6UCdtNHW6RQ2+7WvEefYK+NLb24bC4GodO0npl1gYYm1VVBRumHnupH6dijD+J7a5cPg6N/fJ10nZvaFjXtiX3XhKF2MRr09rCi9Dhtow3rf14ZYUl4Ov9YX09FPW87T9tuNH7ja55/Io/L4n+4/78OtFfh3Ac5x37VG2LQk3z4yv+vCT6j/tTs7zJ9q2ek3a7HXe7KeDzK/68JHrlD773F3+sd3/Noa6ee/MkdL2b9lXbCpXvn15x6CXRtwhCge94zeShto/j4AdFeceUd9w7WN7svn//0CTzt/c/e1atwiSgbJfwF+LBJDmKum3qR/E09ttaiPG1eF4QvYonja8IRleGi9NjWm2sX3oWctAckXnepafMbNOCS+BGwg69djCwnb9rxPmhH7Zdth65oRu0sLbfP4yP2g4JNQmLUzOPHtjyQaTo5uX/FX7Eg3EWKRf6jny3NwqdDkGn3TFRsSuPUng0sY3mv+9Twvh2lrYzDlti+KH9ICeGocBxTYdhFUZoXL3nd+Lv9JlYTvwJ417N6VKqZmXfVpgz1m4SWkd3a1CxtvP/Wm7X540bu9G1XZjF3O7GdmecOpduNMIbDftPASWrJ22ocm2zUzrZiVauxjDoueHQJcvGDP1jmF8+/ga4IWn6xxAAAA==
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/games/20/?fields=*
+    uri: https://api-2445582011268.apicast.io/games/358/?fields=*
     body:
       encoding: US-ASCII
       string: ''
@@ -249,24 +293,24 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '1635'
+      - '1497'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/franchises/24/?fields=*
+    uri: https://api-2445582011268.apicast.io/games/358/?fields=*
     body:
       encoding: US-ASCII
       string: ''
@@ -293,24 +337,24 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '395'
+      - '1497'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAC/3VRu24jMQz8lYNqnS2KFCVtef19QRAcNrbPMRDHwa4NF0H+PTNKlSLNQHwNZ6iH93DahylbDK/z+RCm8HdeTpdff5bLugkx7JbDfD3s/83XMIlqV7WWetUUw+1t/1NpfbkdQXUm1e8nUIHptrwg9Xy9vq3Tdnu/3zen4/5ps7uct/+X+XX3fFoP6/bbyBGK1jA9ZM0tAnqUVCteWghCUIIRMqFGqZIJimZ3ThSEKTMcBMy1hGYbE41VJ4xXj9laYR8JKsa8kzQZQyEkwgg7q2N27KUgGztaVEkUmWvUAvHShx6Iz8UJwwFe0ujAGBptmJKJ8koiMZf5UAZ2g3iMpagOB9g9BIwqx7Cx0H0xQc6zRy8oACy2iiu1jLAVnE++WCVn8IjTnVUdQrEnKU5A9NgLbWWxL4TZXrA2e9cetbceQQxBlJuzUqVXOnYp/KraabKOtMNgM7GoVQpO6dVwNwEjlhnOjEaNajifNZ7TvcGOV0GN2B4/Hj8BEtKcZbICAAA=
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/collections/240/?fields=*
+    uri: https://api-2445582011268.apicast.io/games/358/?fields=*
     body:
       encoding: US-ASCII
       string: ''
@@ -337,24 +381,24 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '228'
+      - '1497'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/keywords/4528/?fields=*
+    uri: https://api-2445582011268.apicast.io/games/358/?fields=*
     body:
       encoding: US-ASCII
       string: ''
@@ -381,21 +425,65 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
       - 3scale API Management - http://www.3scale.net
       Content-Length:
-      - '377'
+      - '1497'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAC/3WRzY4aQQyEXyWas7P4p/3Hq6xWEYERQYIsgkEcorx7ajZ7yCWXlrrt+lzlfv01nQ7TdrgWTT93l3naTtfd+fJluc3zRNP+Nu+W+fBtt0xbcU6xqiEiTNPjevhf6X5+HD9BXz9Bj9sZLz+W5XrfbjbP5/PldDx8f9m/XzZ7YI7vt9N83/yrOMLNfdq+ureQdLmShKuRRzGTBptSZw3yVJzCYUGjRpGxx6DoEOpwJ9HKIGUzkoqhZCLFgCaOGAM1rybnUkGtGwR0haUHXiFrLlRUwWJO3HskBQda27lBSdRCzKmtg7CGwBjuInF4olBRplwxat6AO4x1cJFmYgJsxUeeIKu2gYDpUMsAPhQQ6vGBU1gtb3QwwlChBbFKezUk4JkxIPKXJFgeN37FxoBxzc6BOANuw9aV1hrKJBj28b52A5UGOYoIlAMpJQVqC3OozRBeFOuVDAzo9VtkRK07qVWYzvr2++0PsOjbIF8CAAA=
+        H4sIAAAAAAAC/61XzY7bNhB+FUaXXmRb/z++FFgELdpgmwJJD0UQGJRES1xTpExSVrxBgGL3CXop0EvvzQMUaNGnqV+kQ8re9WbtBVrkIovk8JtvvhmO6DfvHVo58zDOXIfjljhz51XfEYkusaQCXUihpo7rKNbXsKTM0qQ1S5MClmCllwwWGq07NZ/NhmGY0roqpqVoZzXgqdmJPaUkWJNqgbUz90PPC5MgDALP8wCuq+6XYt+LA8+PksQLgEPfAsoWvD0XaCt61OANQUODNaIaabwiCmmBlJnVDUGXvWqkEC36XlJeEqW+RD+K/p+ffmVs3ArGuqF8hZZYaYR5hVoB02RDuJ0CFcAEIukY0QaTKrTuidLP0OtT+AjWC0J5jRrCKlTiTlPAK7aWDtlQhl4I0WGkJS0IEkuke6kZUVP0jQZeCvWd8Whigx9JVNkTwJJoKcGNASlZr8sGAjWbYTzivTA+C7IUEljSliDZczDp9RRd9FadQXBwoMEIEay2U/RaoJroUQJyF4FrfD9UqGS0LUCYnmtMOViUkEOFFMC4CG8ErVAhtBYtMwp0VMP0ktaNBoqHAJESrKJEKisyRo1QZhkVDJcr1OKalqAJ7iB/JpuCsy1YHcVWYo4qEFCRO6kwF9pIwwWfKC06hCvIG/gj92o9quRnppS1kFtGuSn1CzEoIl20Mk6OJYUgGgwJ5RtckephORlGlWhdGww45GCAQTGbH6rpNeFjIWrByVgqNiIYQbUKG0wBJ2Bld6iOMObe19BrgSvYKdjIoCBQjEyUK+NkwFughEbWXyhAUqCuTaYkhgnqCC7JIauPGY9StD3IfxBLg0lfN4jYnJUNREJ4bfQYhGQVCAGQDeqwpbBHLiRt0UB1A4XBzUEZM6sInGxtG0YpAKfUVHBnHkRwsJcS8xJOEDHjo6Fy5m+C6K3rSKzBqzPP4mmaeHke+UkchCkc/E50PQPmGs5+Nk1j19FCY7Y4v+N4fVGa2oUWFyUHJw+mbJcCEr6fur6X2ocHDy/MzWvmxknsxnEaB2YYun7up5EbJlmSAWuNa7vZDZIsCuMoidwY1lI/jPZvQZ7441voBdHdW3z3lljcNPKzwCBCnRMmoHANbhT4MNX1BaOqGadSD2ZKaJK1MM0QpO0Y3hK5MFs6o/nGxmM0NbEtWlGRPUeYWpEtJLayFmHgBl6Uu4HvB+YRmofZBznei2JACJd2YNgtqVR6IQmD808Wplc78yiPIx8y4NkODrmClb3CiWWnoTO1Fg58gafI9UFWg30MZAzeP4rM7oVvQQ7KWG9pFCRe5u29NX2LocQcP8/Dybc9m/gRVN/WbMhD14Gd6Qf3LCqQ2aPmQRLkUfQYNZ9c4u3E9+5Qc4saP4UaHVAhsUnqJ9knsPCpiyZfkeKOrJmwsMETsKCZcxA8i6DYH5HN4snLUk/87EA2iy2q7z0BG/v3sMd5fAD7inQTP/wENv8AGcQMjj/HpuoWfH+U3h+uErubP3e3f+9uf7bP33a3H3c3H3e3v+xuf9/d/GEmb/5CQqJXlxeOAVPQP6B7NkKPMOPlYjaj8I2Az+TdzcK8jJOzvmPQMWd6oYFwMeNwxSiWCq9XXRGUWZW8C5fTq642LYmJvqIcrhALc+VxTpmC2UAr3UAmMshIY7siDMLMKPjf6RSKsyBdX7dlsWwVXF+6pDtD55Tp56azbkiv67Lerpr1UuTratWmZ+icMv3cdLB/RZqhY9yjw6q8LuvC52fonDL93HSgz3HKGX3nd5uUDYSHa3aGzinTJ+hAaW9oRcSDw/E1/JjWjeySszcZ8Yfgu6sfni9fdoGwB6OEi6l05v8nqm29vOYtu1ZDsC2iqyxbs82ZqE6Z3kcV2a6wjyqOoac4RMnCsFJbLjpFITzHuf+Sh2AxkELRx709OP7jAP8bQExNeCWmA11RbCMybzN7g1vYa8ti/C/ysJOFn/4BIdxCdKQCGCHrszBvP7z9F1vWuUn8DAAA
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/games/358/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - "<api_key_is_hidden>"
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 18 Nov 2017 10:21:00 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '1497'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/61XzY7bNhB+FUaXXmRb/z++FFgELdpgmwJJD0UQGJRES1xTpExSVrxBgGL3CXop0EvvzQMUaNGnqV+kQ8re9WbtBVrkIovk8JtvvhmO6DfvHVo58zDOXIfjljhz51XfEYkusaQCXUihpo7rKNbXsKTM0qQ1S5MClmCllwwWGq07NZ/NhmGY0roqpqVoZzXgqdmJPaUkWJNqgbUz90PPC5MgDALP8wCuq+6XYt+LA8+PksQLgEPfAsoWvD0XaCt61OANQUODNaIaabwiCmmBlJnVDUGXvWqkEC36XlJeEqW+RD+K/p+ffmVs3ArGuqF8hZZYaYR5hVoB02RDuJ0CFcAEIukY0QaTKrTuidLP0OtT+AjWC0J5jRrCKlTiTlPAK7aWDtlQhl4I0WGkJS0IEkuke6kZUVP0jQZeCvWd8Whigx9JVNkTwJJoKcGNASlZr8sGAjWbYTzivTA+C7IUEljSliDZczDp9RRd9FadQXBwoMEIEay2U/RaoJroUQJyF4FrfD9UqGS0LUCYnmtMOViUkEOFFMC4CG8ErVAhtBYtMwp0VMP0ktaNBoqHAJESrKJEKisyRo1QZhkVDJcr1OKalqAJ7iB/JpuCsy1YHcVWYo4qEFCRO6kwF9pIwwWfKC06hCvIG/gj92o9quRnppS1kFtGuSn1CzEoIl20Mk6OJYUgGgwJ5RtckephORlGlWhdGww45GCAQTGbH6rpNeFjIWrByVgqNiIYQbUKG0wBJ2Bld6iOMObe19BrgSvYKdjIoCBQjEyUK+NkwFughEbWXyhAUqCuTaYkhgnqCC7JIauPGY9StD3IfxBLg0lfN4jYnJUNREJ4bfQYhGQVCAGQDeqwpbBHLiRt0UB1A4XBzUEZM6sInGxtG0YpAKfUVHBnHkRwsJcS8xJOEDHjo6Fy5m+C6K3rSKzBqzPP4mmaeHke+UkchCkc/E50PQPmGs5+Nk1j19FCY7Y4v+N4fVGa2oUWFyUHJw+mbJcCEr6fur6X2ocHDy/MzWvmxknsxnEaB2YYun7up5EbJlmSAWuNa7vZDZIsCuMoidwY1lI/jPZvQZ7441voBdHdW3z3lljcNPKzwCBCnRMmoHANbhT4MNX1BaOqGadSD2ZKaJK1MM0QpO0Y3hK5MFs6o/nGxmM0NbEtWlGRPUeYWpEtJLayFmHgBl6Uu4HvB+YRmofZBznei2JACJd2YNgtqVR6IQmD808Wplc78yiPIx8y4NkODrmClb3CiWWnoTO1Fg58gafI9UFWg30MZAzeP4rM7oVvQQ7KWG9pFCRe5u29NX2LocQcP8/Dybc9m/gRVN/WbMhD14Gd6Qf3LCqQ2aPmQRLkUfQYNZ9c4u3E9+5Qc4saP4UaHVAhsUnqJ9knsPCpiyZfkeKOrJmwsMETsKCZcxA8i6DYH5HN4snLUk/87EA2iy2q7z0BG/v3sMd5fAD7inQTP/wENv8AGcQMjj/HpuoWfH+U3h+uErubP3e3f+9uf7bP33a3H3c3H3e3v+xuf9/d/GEmb/5CQqJXlxeOAVPQP6B7NkKPMOPlYjaj8I2Az+TdzcK8jJOzvmPQMWd6oYFwMeNwxSiWCq9XXRGUWZW8C5fTq642LYmJvqIcrhALc+VxTpmC2UAr3UAmMshIY7siDMLMKPjf6RSKsyBdX7dlsWwVXF+6pDtD55Tp56azbkiv67Lerpr1UuTratWmZ+icMv3cdLB/RZqhY9yjw6q8LuvC52fonDL93HSgz3HKGX3nd5uUDYSHa3aGzinTJ+hAaW9oRcSDw/E1/JjWjeySszcZ8Yfgu6sfni9fdoGwB6OEi6l05v8nqm29vOYtu1ZDsC2iqyxbs82ZqE6Z3kcV2a6wjyqOoac4RMnCsFJbLjpFITzHuf+Sh2AxkELRx709OP7jAP8bQExNeCWmA11RbCMybzN7g1vYa8ti/C/ysJOFn/4BIdxCdKQCGCHrszBvP7z9F1vWuUn8DAAA
+    http_version: 
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/keywords/85/?fields=*
@@ -425,7 +513,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:00 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -439,7 +527,7 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/3WOwQ6DIBBEf6XZ81ZdARF+xZjGCqEkKgYwHpr+e0naQy+97GFn5s0MT/AGdC8Qtmm1oGGz4bIFHwFhjnbK1tymDJoYl0xyyZWUxXzs5p+UlsN9ONcv54hLeTxy3pOu6/M8K+/MvZrDWs+F4kL0NtU/AVemJNADtarBjrUCqUdSqLoGqTQRklBULmddi21Dohlf4xuOu1GSzAAAAA==
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:36 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:00 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/games/20/?fields=*
@@ -469,7 +557,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:36 GMT
+      - Sat, 18 Nov 2017 10:21:01 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -481,9 +569,97 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:37 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:01 GMT
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/franchises/24/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - "<api_key_is_hidden>"
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 18 Nov 2017 10:21:01 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '395'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/3VRu24jMQz8lYNqnS2KFCVtef19QRAcNrbPMRDHwa4NF0H+PTNKlSLNQHwNZ6iH93DahylbDK/z+RCm8HdeTpdff5bLugkx7JbDfD3s/83XMIlqV7WWetUUw+1t/1NpfbkdQXUm1e8nUIHptrwg9Xy9vq3Tdnu/3zen4/5ps7uct/+X+XX3fFoP6/bbyBGK1jA9ZM0tAnqUVCteWghCUIIRMqFGqZIJimZ3ThSEKTMcBMy1hGYbE41VJ4xXj9laYR8JKsa8kzQZQyEkwgg7q2N27KUgGztaVEkUmWvUAvHShx6Iz8UJwwFe0ujAGBptmJKJ8koiMZf5UAZ2g3iMpagOB9g9BIwqx7Cx0H0xQc6zRy8oACy2iiu1jLAVnE++WCVn8IjTnVUdQrEnKU5A9NgLbWWxL4TZXrA2e9cetbceQQxBlJuzUqVXOnYp/KraabKOtMNgM7GoVQpO6dVwNwEjlhnOjEaNajifNZ7TvcGOV0GN2B4/Hj8BEtKcZbICAAA=
+    http_version: 
+  recorded_at: Sat, 18 Nov 2017 10:21:01 GMT
+- request:
+    method: get
+    uri: https://api-2445582011268.apicast.io/collections/240/?fields=*
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      Content-Type:
+      - text/json
+      User-Key:
+      - "<api_key_is_hidden>"
+      Host:
+      - api-2445582011268.apicast.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 18 Nov 2017 10:21:01 GMT
+      Server:
+      - openresty/1.9.15.1
+      X-Powered-By:
+      - 3scale API Management - http://www.3scale.net
+      Content-Length:
+      - '228'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAC/3WOQW6EMAxFr1Jl7Q4JJjbhDl11ORpVFCKKBAMiQSyq3r02ms0sZvNlv29/+/prxt40ZWXB3Ns5msZ87mvc3j7abVwMmG6LbY79V5tN4xADYlXbQMRg9rV/ZaVpHyQqadT7/Ijat0nYT85raoriOI7LOPTfl26Zi26Zptjlcbmn4nlpkKeSaa7OMoGIVWERqqFEDgSlq0/oVSpp2UHt0WtVCztdIvAuBB1RxqguAsvbUBJ7CSPnJZfIMaDXIdKWKwbyFnXJqYQTytkSrQIKt7/bP0zfHDtHAQAA
+    http_version: 
+  recorded_at: Sat, 18 Nov 2017 10:21:01 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/games/20/?fields=*
@@ -513,7 +689,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:37 GMT
+      - Sat, 18 Nov 2017 10:21:01 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -525,97 +701,9 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:37 GMT
-- request:
-    method: get
-    uri: https://api-2445582011268.apicast.io/games/20/?fields=*
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - text/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
-      Content-Type:
-      - text/json
-      User-Key:
-      - "<api_key_is_hidden>"
-      Host:
-      - api-2445582011268.apicast.io
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 16 Nov 2017 10:09:37 GMT
-      Server:
-      - openresty/1.9.15.1
-      X-Powered-By:
-      - 3scale API Management - http://www.3scale.net
-      Content-Length:
-      - '1635'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        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
-    http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:37 GMT
-- request:
-    method: get
-    uri: https://api-2445582011268.apicast.io/keywords/4552/?fields=*
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - text/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
-      Content-Type:
-      - text/json
-      User-Key:
-      - "<api_key_is_hidden>"
-      Host:
-      - api-2445582011268.apicast.io
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 16 Nov 2017 10:09:37 GMT
-      Server:
-      - openresty/1.9.15.1
-      X-Powered-By:
-      - 3scale API Management - http://www.3scale.net
-      Content-Length:
-      - '496'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAC/3VSzWqbQQx8l+8sYv2tfvwqIZQ0Nm4gaUJs40Ppu3fkQ+mll0W7kkYzo338tb0etr2vpbT9fH4/bvvtx/Ht/XjZaHv5Oj5fjodvz5dtL4tTvFq5uGi7fh7+lzq/XU//oly/3uZ6uXye97vd7XZ7eD0dvj+8fLzvXoBx+vh6PZ53f8tPIHHe9o8SXU2mi0mXspLw4ibvQpyuTGEyz12ZtKJcaa1gyhShlZyFVxwiakoquKCYAy+RUoBWIV+hRtEhVBooS0tDmSWVx0IzhwMNU9HmCMPAymQlKZuhwXOhdgW6PJkW4kUa0mBVi4WyAVEV9wqM6EGQKjCFwijGQG4DI+nJeMxAaFVGClMgZ0YZrwoK1gYvFkWsq4TEJZ2sZBEixrMsT5yYjYzBKc02cnUYkcAGhyHChiHQqhh9p2IMFvAWcONaUXgArxRkO3juBnZi5ggVhnq0F6nBVb3LUUYn6OVQFcUqpGLMqbFbTIG32uGIh8LOTvRDB0zEJnm4xmw1l8DxhOejDzDNk2SF7ORy6lTsSAR5nh8A73l8RFtDCIisARj3sGKek4eHCf6ItOZYCYmdKIbmwWltqsYShP1Owhh/JvGxsVAHftr4BgSYJeA7hTVWj1mVFtTe6+n30x/gr1r7WAMAAA==
-    http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:37 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:01 GMT
 - request:
     method: get
     uri: https://api-2445582011268.apicast.io/keywords/1136/?fields=*
@@ -645,7 +733,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 16 Nov 2017 10:09:37 GMT
+      - Sat, 18 Nov 2017 10:21:01 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -659,5 +747,5 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/3WNS2rDYAyE76L1EEv/U/JVQiiubVxDEgc/8KL07lWh0FU3g2ZG+nT9pHmgViQW0LN7jNTSc5lXAvXr2O3j8Nbt3icuUVPOappAx2v4r9rux/THONa7m499f21t05zneZmn4f3SL4+md8K0rPO4Nb/Lk7/fqL2KQtgghmAWYYUhKqhWApIHUaO3wRg5J++FC7RogNafyfxQVK1AYgjRWZyq06JmuLeKkKy6Fs0M4yQuTnTxkEX59nX7Bm2cK6wYAQAA
     http_version: 
-  recorded_at: Thu, 16 Nov 2017 10:09:37 GMT
+  recorded_at: Sat, 18 Nov 2017 10:21:01 GMT
 recorded_with: VCR 3.0.3
