@@ -24,5 +24,10 @@
     "pedantic": false,
     "smartLists": true,
     "langPrefix": "language-"
+  },
+  "sync": {
+    "id": "5a0edda3a8ed7c37070fac0f",
+    "name": "Jerkwarrior/gameReview",
+    "useImdoneioForPriority": true
   }
 }
