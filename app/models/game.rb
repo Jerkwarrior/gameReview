@@ -9,6 +9,8 @@ class Game < ApplicationRecord
   has_many :images
   has_many :videos
 
+  has_many :developers
+  has_many :publishers
   has_many :companies, through: :developers
   has_many :companies, through: :publishers
 

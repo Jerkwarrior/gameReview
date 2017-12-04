@@ -9,9 +9,9 @@
       <p>{{game.summary}}</p>
       <ul>
         <li>First released: {{game.release_date_human}}</li>
-        <li>Game Modes: {{game.game_modes}}</li>
-        <li>platforms: {{game.platforms}}</li>
-        <li>{{game.perspectives}} {{game.themes}} {{game.keywords}}</li>
+        <li>Game Modes: {{game.game_modes[0].name}}</li>
+        <!-- <li>platforms: {{game.platforms.first.name}}</li>
+        <li>{{game.perspectives.first.name}} {{game.themes.first.name}} {{game.keywords.first.name}}</li> -->
       </ul>
     </div>
 </div>
@@ -26,8 +26,8 @@ export default {
   created() {
     this.axios.get('games/6')
     .then(response => {
-      console.log(response.data);
-      this.game = response.data
+      this.game = response.data;
+      console.log(this.game);
     })
     .catch(e => {
       this.errors.push(e)
