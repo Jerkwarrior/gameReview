@@ -10,8 +10,9 @@
       <ul>
         <li>First released: {{game.release_date_human}}</li>
         <li>Game Modes: {{game.game_modes[0].name}}</li>
-        <!-- <li>platforms: {{game.platforms.first.name}}</li>
-        <li>{{game.perspectives.first.name}} {{game.themes.first.name}} {{game.keywords.first.name}}</li> -->
+        <li>Platforms: {{game.platforms[0].name}}</li>
+        <li>Perspectives: {{game.perspectives[0].name}}</li>
+        <li>Themes: {{game.themes[0].name}}</li>
       </ul>
     </div>
 </div>
@@ -20,11 +21,13 @@
 
 <script>
 export default {
+  props: { game_id: Number
+  },
   data: function() {
     return {game: []}
   },
   created() {
-    this.axios.get('games/6')
+    this.axios.get('games/' + this.game_id)
     .then(response => {
       this.game = response.data;
       console.log(this.game);

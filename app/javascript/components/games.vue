@@ -1,6 +1,6 @@
 <template>
   <div>
-    <game-info></game-info>
+    <game-info :game_id=60></game-info>
   </div>
 </template>
 

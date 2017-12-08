@@ -31,6 +31,7 @@
 
 import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router'
+import VueCarousel from 'vue-carousel'
 import Navbar from 'components/navbar'
 import Home from 'components/home'
 import Games from 'components/games'
@@ -43,6 +44,7 @@ import Cards from 'components/cards'
 
 Vue.use(VueAxios, axios);
 Vue.use(VueRouter);
+Vue.use(VueCarousel);
 
 // 0. If using a module system, call Vue.use(VueRouter)
 

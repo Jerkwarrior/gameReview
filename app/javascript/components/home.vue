@@ -1,10 +1,14 @@
 <template>
-  <div class ="main">
-    <h1>Game Review Site Title</h1>
-    <input placeholder="Search...">
-    <h2>Top Rated</h2>
-    <cards></cards>
-  </div>
+<div class="main">
+  <h1>Game Review Site Title</h1>
+  <input placeholder="Search...">
+  <h2>Top Rated</h2>
+  <carousel>
+    <slide>
+      <cards></cards>
+    </slide>
+  </carousel>
+</div>
 </template>
 
 <script>
@@ -12,6 +16,9 @@
 </script>
 
 <style scoped lang="sass">
+*
+  font-family: Helvetica, Verdana, sans-serif
+
 .main
   text-align: center
   input
