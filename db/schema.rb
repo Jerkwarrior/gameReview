@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171116130752) do
+ActiveRecord::Schema.define(version: 20171208124611) do
 
   create_table "collections", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(version: 20171116130752) do
     t.string "steam_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "cover_big"
     t.index ["collection_id"], name: "index_games_on_collection_id"
     t.index ["franchise_id"], name: "index_games_on_franchise_id"
   end
