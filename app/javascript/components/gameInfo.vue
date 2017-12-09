@@ -3,7 +3,7 @@
   <div class="main">
     <h1>{{game.name}}</h1>
     <div class="left">
-      <img src= 'https://igdb.spacechop.com/igdb/image/upload/t_cover_big/pvcxrnssrbmzipz5h3wq.jpg' alt=""></img>
+      <img v-bind:src="game.cover_big">
     </div>
     <div class="right">
       <p>{{game.summary}}</p>
