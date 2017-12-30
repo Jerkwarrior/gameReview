@@ -9,10 +9,13 @@
       <p>{{game.summary}}</p>
       <ul>
         <li>First released: {{game.release_date_human}}</li>
-        <li>Game Modes: {{game.game_modes[0].name}}</li>
-        <li>Platforms: {{game.platforms[0].name}}</li>
-        <li>Perspectives: {{game.perspectives[0].name}}</li>
-        <li>Themes: {{game.themes[0].name}}</li>
+        <li v-for="modes in game.game_modes">Game Modes: {{modes.name}}</li>
+        <p>Platforms:</p>
+        <li v-for="platform in game.platforms">{{platform.name}}</li>
+        <p>Game perspectives:</p>
+        <li v-for="persp in game.perspectives">{{persp.name}}</li>
+        <p>Themes:</p>
+        <li v-for="theme in game.themes">{{theme.name}}</li>
       </ul>
     </div>
 </div>
@@ -56,5 +59,10 @@ export default {
     margin-right: 5%
   .right
     li
+      display: inline
       list-style: none
+    li:after
+      content: ", "
+    li:last-child:after
+      content: ""
 </style>

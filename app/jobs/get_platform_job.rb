@@ -11,6 +11,7 @@ class GetPlatformJob < ApplicationJob
       platform.name = ig_platform.name
       platform.logo_url = ig_platform.logo&.url
       platform.save!
+      return if game.platforms.exists?(id: plat_id)
       game.platforms << platform
     end
   end
