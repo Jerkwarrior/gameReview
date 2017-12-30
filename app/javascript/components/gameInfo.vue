@@ -7,14 +7,17 @@
     </div>
     <div class="right">
       <p>{{game.summary}}</p>
+      <p>First released: {{game.release_date_human}}</p>
       <ul>
-        <li>First released: {{game.release_date_human}}</li>
-        <li v-for="modes in game.game_modes">Game Modes: {{modes.name}}</li>
+        <p>Game Modes:</p>
+        <li v-for="modes in game.game_modes">{{modes.name}}</li>
+      </ul>
+      <ul>
         <p>Platforms:</p>
         <li v-for="platform in game.platforms">{{platform.name}}</li>
-        <p>Game perspectives:</p>
+      </ul>
+      <ul>
         <li v-for="persp in game.perspectives">{{persp.name}}</li>
-        <p>Themes:</p>
         <li v-for="theme in game.themes">{{theme.name}}</li>
       </ul>
     </div>
@@ -58,6 +61,8 @@ export default {
     float: left
     margin-right: 5%
   .right
+    p
+      display: inline
     li
       display: inline
       list-style: none
