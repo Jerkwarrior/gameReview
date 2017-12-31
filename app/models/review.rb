@@ -1,5 +1,4 @@
 class Review < ApplicationRecord
-  # TODO Remove difficulty from ActiveRecord
 
   validates :summary, :gameplay, :story, :graphics, :immersion, presence: true
 
