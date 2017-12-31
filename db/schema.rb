@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171208124611) do
+ActiveRecord::Schema.define(version: 20171231122123) do
 
   create_table "collections", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -166,6 +166,20 @@ ActiveRecord::Schema.define(version: 20171208124611) do
     t.integer "game_id"
     t.index ["company_id"], name: "index_publishers_on_company_id"
     t.index ["game_id"], name: "index_publishers_on_game_id"
+  end
+
+  create_table "reviews", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.text "summary"
+    t.integer "gameplay"
+    t.integer "story"
+    t.integer "graphics"
+    t.integer "immersion"
+    t.string "difficulty"
+    t.boolean "recommended?"
+    t.boolean "bugs?"
+    t.boolean "microtransactions?"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "themes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
