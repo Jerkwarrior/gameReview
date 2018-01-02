@@ -9,4 +9,6 @@ class Review < ApplicationRecord
 
   validates :summary, length: {maximum: 1500}
 
+  belongs_to :game
+  belongs_to :user
 end

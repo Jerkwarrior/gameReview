@@ -16,4 +16,7 @@ class Game < ApplicationRecord
 
   belongs_to :franchise, required: false
   belongs_to :collection, required: false
+
+  has_many :users
+  has_many :reviews, through: :user
 end
