@@ -38,6 +38,7 @@ import Games from 'components/games'
 import Developers from 'components/developers'
 import Publishers from 'components/publishers'
 import gameInfo from 'components/gameInfo'
+import Register from 'components/register'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Cards from 'components/cards'
@@ -63,7 +64,8 @@ const routes = [
   { path: '/', component: Home },
   { path: '/games', component: Games },
   { path: '/developers', component: Developers },
-  { path: '/publishers', component: Publishers }
+  { path: '/publishers', component: Publishers },
+  { path: '/register', component: Register}
 ]
 
 // 3. Create the router instance and pass the `routes` option

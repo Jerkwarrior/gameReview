@@ -1,21 +1,24 @@
 <template>
-	<nav>
-	    <ul>
-	      <li @click="setActive('home')" :class="{ active: isActive('home') }">
-	        <router-link to="/">Home</router-link>
-	      </li>
-				<li @click="setActive('games')" :class="{ active: isActive('games') }">
-	        <router-link to="/games">Games</router-link>
-	      </li>
-				<li @click="setActive('developers')" :class="{ active: isActive('developers') }">
-					<router-link to="/developers">Developers</router-link>
-				</li>
-				<li @click="setActive('publishers')" :class="{ active: isActive('publishers') }">
-					<router-link to="/publishers">Publishers</router-link>
-				</li>
-				<input class="searching" placeholder="Search...">
-	    </ul>
-	</nav>
+  <nav>
+      <ul>
+        <li @click="setActive('home')" :class="{ active: isActive('home') }">
+          <router-link to="/">Home</router-link>
+        </li>
+        <li @click="setActive('games')" :class="{ active: isActive('games') }">
+          <router-link to="/games">Games</router-link>
+        </li>
+        <li @click="setActive('developers')" :class="{ active: isActive('developers') }">
+          <router-link to="/developers">Developers</router-link>
+        </li>
+        <li @click="setActive('publishers')" :class="{ active: isActive('publishers') }">
+          <router-link to="/publishers">Publishers</router-link>
+        </li>
+        <li @click="setActive('register')" :class="{ active: isActive('register') }">
+          <router-link to="/register">Sign up</router-link>
+        </li>
+        <input class="searching" placeholder="Search...">
+      </ul>
+  </nav>
 </template>
 
 <script>
