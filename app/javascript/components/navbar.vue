@@ -14,7 +14,7 @@
           <router-link to="/publishers">Publishers</router-link>
         </li>
         <li @click="setActive('register')" :class="{ active: isActive('register') }">
-          <router-link to="/register">Sign up</router-link>
+          <router-link to="/register">Register</router-link>
         </li>
         <input class="searching" placeholder="Search...">
       </ul>

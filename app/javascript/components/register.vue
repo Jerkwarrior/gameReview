@@ -1,21 +1,28 @@
 <template lang="html">
   <div class="register">
-    <!-- username, email, password -->
-    <h1>REGISTER</h1>
-    <form>
-      Username: <br>
-      <input type="text" v-model="username">{{username}} <br>
-      Email Address: <br  >
-      <input type="email" v-model="email">{{email}} <br>
-      Password: <br>
-      <input type="password" v-model="password">{{password}} <br>
-      <input type="submit" name="" value="Submit">
-    </form>
+    <p v-html='registerHtml'>{{registerHtml}}</p>
   </div>
 </template>
 
 <script>
 export default {
+  data: function() {
+    return {
+      registerHtml: ''
+    }
+  },
+  created() {
+    this.axios.get('users/sign_up')
+    .then(response => {
+      this.registerHtml = response.data
+      console.log(this.registerHtml);
+      return this.registerHtml
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
+  }
+
 }
 </script>
 
