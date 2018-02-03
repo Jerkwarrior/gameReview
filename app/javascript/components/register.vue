@@ -6,16 +6,16 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       registerHtml: ''
     }
   },
-  created() {
+  created () {
     this.axios.get('users/sign_up')
     .then(response => {
       this.registerHtml = response.data
-      console.log(this.registerHtml);
+      console.log(this.registerHtml)
       return this.registerHtml
     })
     .catch(e => {

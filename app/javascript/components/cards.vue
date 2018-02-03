@@ -22,13 +22,13 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {game: []}
   },
-  created() {
+  created () {
     this.axios.get('games/20')
     .then(response => {
-      console.log(response.data);
+      console.log(response.data)
       this.game = response.data
     })
     .catch(e => {

@@ -29,14 +29,14 @@
 export default {
   props: { game_id: Number
   },
-  data: function() {
+  data: function () {
     return {game: []}
   },
-  created() {
+  created () {
     this.axios.get('games/' + this.game_id)
     .then(response => {
-      this.game = response.data;
-      console.log(this.game);
+      this.game = response.data
+      console.log(this.game)
     })
     .catch(e => {
       this.errors.push(e)

@@ -15,7 +15,6 @@
 //   console.log(app)
 // })
 
-
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
 // need to always use single file components.
@@ -43,17 +42,17 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Cards from 'components/cards'
 
-Vue.use(VueAxios, axios);
-Vue.use(VueRouter);
-Vue.use(VueCarousel);
+Vue.use(VueAxios, axios)
+Vue.use(VueRouter)
+Vue.use(VueCarousel)
 
 // 0. If using a module system, call Vue.use(VueRouter)
 
 // 1. Define route components.
 // These can be imported from other files
 
-Vue.component('game-info', gameInfo);
-Vue.component('cards', Cards);
+Vue.component('game-info', gameInfo)
+Vue.component('cards', Cards)
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -65,7 +64,7 @@ const routes = [
   { path: '/games', component: Games },
   { path: '/developers', component: Developers },
   { path: '/publishers', component: Publishers },
-  { path: '/register', component: Register}
+  { path: '/register', component: Register }
 ]
 
 // 3. Create the router instance and pass the `routes` option
@@ -78,13 +77,13 @@ const router = new VueRouter({
 // 4. Create and mount the root instance.
 // Make sure to inject the router with the router option to make the
 // whole app router-aware.
-document.addEventListener( 'DOMContentLoaded', () =>  {
+document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     router,
     el: '#app',
     data: {
     },
-    components: { navbar: Navbar}
-})
+    components: {navbar: Navbar}
+  })
 })
 // Now the app has started!
