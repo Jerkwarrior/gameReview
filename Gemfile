@@ -12,7 +12,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'webpacker'
 gem 'igdb_api', :git => 'https://github.com/jerkwarrior/igdb-api-ruby'
-gem 'devise'
+gem 'devise'# , git: 'https://github.com/plataformatec/devise' Ruby 2.5.0 only
 gem 'paperclip'
 gem 'ransack'
 gem 'guard-rspec', require: false
@@ -28,7 +28,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'pry-rails'
-  gem 'ruby_gntp'
+  # gem 'ruby_gntp'
 end
 
 group :development do

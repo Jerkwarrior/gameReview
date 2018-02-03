@@ -2,182 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-2445582011268.apicast.io/games/75120/?fields=*
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - text/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
-      Content-Type:
-      - text/json
-      User-Key:
-      - "<api_key_is_hidden>"
-      Host:
-      - api-2445582011268.apicast.io
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 18 Nov 2017 10:20:10 GMT
-      Server:
-      - openresty/1.9.15.1
-      X-Powered-By:
-      - 3scale API Management - http://www.3scale.net
-      Content-Length:
-      - '362'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAC/2VSQW6DMBD8iuVeKWBISuADvVat1B6iCDl4A24NtmwTFEX5e9ckqdLkuDPj8ezY6yOVglbFkmVpRAfeA63om9Xf0HjyzlvPWxpRp8YWcXPGn+0VH61CuPPeuCpJpmmKZSu2caP7pEUrlzycaCxwD6LmnlZsmZZ5mq0WrChLNDPinirZcsGQcmPfc3t4iEYm7ojvgAjYg9Kmh8ETL70Concz8eG5JV/cOnKJQrYH8ildA5Yr8hpCoo570nFBHIoxwT83OZAsZXmM2XeWD00nHVbEbiZHqzXbRNRoMypupcecWZwtI4oJZzIt8mLBVtkLqi7eYANTINDg0q0Oy+EDGMUPYOtAGwwr97N7hrLQZ91r8Xcdbtefh4itggAGO895YHEVP+L0gp6jclA3ehyw2CKiE2yd9LP0eHN7fv+cMMST/JEGhOSxtm0SpuTaXT1393T5IqfNafMLkcBOM0sCAAA=
-    http_version: 
-  recorded_at: Sat, 18 Nov 2017 10:20:11 GMT
-- request:
-    method: get
-    uri: https://api-2445582011268.apicast.io/games/75120/?fields=*
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - text/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
-      Content-Type:
-      - text/json
-      User-Key:
-      - "<api_key_is_hidden>"
-      Host:
-      - api-2445582011268.apicast.io
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 18 Nov 2017 10:20:10 GMT
-      Server:
-      - openresty/1.9.15.1
-      X-Powered-By:
-      - 3scale API Management - http://www.3scale.net
-      Content-Length:
-      - '362'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAC/2VSQW6DMBD8iuVeKWBISuADvVat1B6iCDl4A24NtmwTFEX5e9ckqdLkuDPj8ezY6yOVglbFkmVpRAfeA63om9Xf0HjyzlvPWxpRp8YWcXPGn+0VH61CuPPeuCpJpmmKZSu2caP7pEUrlzycaCxwD6LmnlZsmZZ5mq0WrChLNDPinirZcsGQcmPfc3t4iEYm7ojvgAjYg9Kmh8ETL70Concz8eG5JV/cOnKJQrYH8ildA5Yr8hpCoo570nFBHIoxwT83OZAsZXmM2XeWD00nHVbEbiZHqzXbRNRoMypupcecWZwtI4oJZzIt8mLBVtkLqi7eYANTINDg0q0Oy+EDGMUPYOtAGwwr97N7hrLQZ91r8Xcdbtefh4itggAGO895YHEVP+L0gp6jclA3ehyw2CKiE2yd9LP0eHN7fv+cMMST/JEGhOSxtm0SpuTaXT1393T5IqfNafMLkcBOM0sCAAA=
-    http_version: 
-  recorded_at: Sat, 18 Nov 2017 10:20:11 GMT
-- request:
-    method: get
-    uri: https://api-2445582011268.apicast.io/games/75120/?fields=*
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - text/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
-      Content-Type:
-      - text/json
-      User-Key:
-      - "<api_key_is_hidden>"
-      Host:
-      - api-2445582011268.apicast.io
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 18 Nov 2017 10:20:11 GMT
-      Server:
-      - openresty/1.9.15.1
-      X-Powered-By:
-      - 3scale API Management - http://www.3scale.net
-      Content-Length:
-      - '362'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAC/2VSQW6DMBD8iuVeKWBISuADvVat1B6iCDl4A24NtmwTFEX5e9ckqdLkuDPj8ezY6yOVglbFkmVpRAfeA63om9Xf0HjyzlvPWxpRp8YWcXPGn+0VH61CuPPeuCpJpmmKZSu2caP7pEUrlzycaCxwD6LmnlZsmZZ5mq0WrChLNDPinirZcsGQcmPfc3t4iEYm7ojvgAjYg9Kmh8ETL70Concz8eG5JV/cOnKJQrYH8ildA5Yr8hpCoo570nFBHIoxwT83OZAsZXmM2XeWD00nHVbEbiZHqzXbRNRoMypupcecWZwtI4oJZzIt8mLBVtkLqi7eYANTINDg0q0Oy+EDGMUPYOtAGwwr97N7hrLQZ91r8Xcdbtefh4itggAGO895YHEVP+L0gp6jclA3ehyw2CKiE2yd9LP0eHN7fv+cMMST/JEGhOSxtm0SpuTaXT1393T5IqfNafMLkcBOM0sCAAA=
-    http_version: 
-  recorded_at: Sat, 18 Nov 2017 10:20:11 GMT
-- request:
-    method: get
-    uri: https://api-2445582011268.apicast.io/games/75120/?fields=*
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - text/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
-      Content-Type:
-      - text/json
-      User-Key:
-      - "<api_key_is_hidden>"
-      Host:
-      - api-2445582011268.apicast.io
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 18 Nov 2017 10:20:11 GMT
-      Server:
-      - openresty/1.9.15.1
-      X-Powered-By:
-      - 3scale API Management - http://www.3scale.net
-      Content-Length:
-      - '362'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAC/2VSQW6DMBD8iuVeKWBISuADvVat1B6iCDl4A24NtmwTFEX5e9ckqdLkuDPj8ezY6yOVglbFkmVpRAfeA63om9Xf0HjyzlvPWxpRp8YWcXPGn+0VH61CuPPeuCpJpmmKZSu2caP7pEUrlzycaCxwD6LmnlZsmZZ5mq0WrChLNDPinirZcsGQcmPfc3t4iEYm7ojvgAjYg9Kmh8ETL70Concz8eG5JV/cOnKJQrYH8ildA5Yr8hpCoo570nFBHIoxwT83OZAsZXmM2XeWD00nHVbEbiZHqzXbRNRoMypupcecWZwtI4oJZzIt8mLBVtkLqi7eYANTINDg0q0Oy+EDGMUPYOtAGwwr97N7hrLQZ91r8Xcdbtefh4itggAGO895YHEVP+L0gp6jclA3ehyw2CKiE2yd9LP0eHN7fv+cMMST/JEGhOSxtm0SpuTaXT1393T5IqfNafMLkcBOM0sCAAA=
-    http_version: 
-  recorded_at: Sat, 18 Nov 2017 10:20:11 GMT
-- request:
-    method: get
     uri: https://api-2445582011268.apicast.io/companies/20/?fields=*
     body:
       encoding: US-ASCII
@@ -188,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.4.1p111
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.0p0
       Content-Type:
       - text/json
       User-Key:
@@ -205,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Nov 2017 10:20:11 GMT
+      - Fri, 02 Feb 2018 15:38:14 GMT
       Server:
       - openresty/1.9.15.1
       X-Powered-By:
@@ -219,5 +43,5 @@ http_interactions:
       string: !binary |-
         H4sIAAAAAAAC/3WPywrCQAxFf0Wy7mv6sO2sBT/AZSll7ITpYF/MwyLivxtBdKOBBMLlnuQ2d9ASeJoEMIsJgcNBmIvVEndH2ncn56VeLATQGxQOZScccJbWdbovWFInCTn9Kr9SzsqCqszyqgrAjl4RVL6hoSJoaD9Qb0ZSB+dWy+N427ZIK3mO+mWKqVcxa7TxP7N1wrjudbrraajF3IDTO/0gZoU/BIlXHJcVKXCTsoBlZdk+2icAwpJ7AwEAAA==
     http_version: 
-  recorded_at: Sat, 18 Nov 2017 10:20:11 GMT
+  recorded_at: Fri, 02 Feb 2018 15:38:14 GMT
 recorded_with: VCR 3.0.3
