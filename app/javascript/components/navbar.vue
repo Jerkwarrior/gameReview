@@ -16,6 +16,12 @@
         <li @click="setActive('register')" :class="{ active: isActive('register') }">
           <router-link to="/register">Register</router-link>
         </li>
+        <li @click="setActive('logout')" :class="{ active: isActive('logout') }">
+          <router-link to="/logout">Logout</router-link>
+        </li>
+        <li @click="setActive('login')" :class="{ active: isActive('login') }">
+          <router-link to="/login">Login</router-link>
+        </li>
         <input class="searching" placeholder="Search...">
       </ul>
   </nav>
