@@ -7,6 +7,8 @@ end
 
 gem 'coffee-rails', '~> 4.2'
 gem 'devise' # , git: 'https://github.com/plataformatec/devise' Ruby 2.5.0 only
+gem 'devise_token_auth'
+gem 'omniauth'
 gem 'guard-rspec', require: false
 gem 'igdb_api', git: 'https://github.com/jerkwarrior/igdb-api-ruby'
 gem 'jbuilder', '~> 2.5'
