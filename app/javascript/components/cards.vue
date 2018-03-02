@@ -26,7 +26,7 @@ export default {
     return {game: []}
   },
   created () {
-    this.axios.get('games/20')
+    this.axios.get('games/1')
     .then(response => {
       console.log(response.data)
       this.game = response.data

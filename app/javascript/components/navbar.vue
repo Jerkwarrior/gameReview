@@ -30,7 +30,7 @@
 <script>
 export default {
   data () {
-    return { activeItem: 'home' }
+    return {activeItem: 'home' }
   },
   methods: {
     isActive: function (menuItem) {
