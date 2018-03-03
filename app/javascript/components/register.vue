@@ -12,7 +12,7 @@ export default {
     }
   },
   created () {
-    this.axios.get('users/sign_up')
+    this.axios.get('auth/sign_up')
     .then(response => {
       this.registerHtml = response.data
       console.log(this.registerHtml)
