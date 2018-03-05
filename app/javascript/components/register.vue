@@ -1,6 +1,16 @@
 <template lang="html">
   <div class="register">
-    <p v-html='registerHtml'>{{registerHtml}}</p>
+    <h2>{{error_message}}</h2>
+    <p>Username:</p></br>
+    <input v-model="registerForm.username" class="input" type="test"></br>
+    <p>Email:</p></br>
+    <input v-model="registerForm.email" class="input" type="email"></br>
+    <p>Password:</p></br>
+    <input v-model="registerForm.password" class="input" type="password"></br>
+    <p>Confirm Password:</p></br>
+    <input v-model="password_confirm" class="input" type="password"></br>
+    <p>Submit:</p></br>
+    <input v-on:click="submit()" type="submit" value="submit">
   </div>
 </template>
 
@@ -8,21 +18,38 @@
 export default {
   data: function () {
     return {
-      registerHtml: ''
+      registerForm: {
+        username: '',
+        email: '',
+        password: ''
+      },
+      password_confirm: '',
+      error_message: ''
     }
   },
-  created () {
-    this.axios.get('auth/sign_up')
-    .then(response => {
-      this.registerHtml = response.data
-      console.log(this.registerHtml)
-      return this.registerHtml
-    })
-    .catch(e => {
-      this.errors.push(e)
-    })
+  methods: {
+    submit: function () {
+      if (this.registerForm.password !== this.password_confirm) {
+        this.error_message = "Passwords do not match, try again."
+      } else {
+        let self = this
+        this.axios.post('auth/', this.registerForm)
+        .then(response => {
+          const status = response.data.status
+          console.log(status)
+          if (status == 'success') {
+            self.$router.push('/')
+          } else {
+            console.log(errors)
+          }
+        })
+        .catch(error => {
+          console.log(error.response.data.errors.full_messages)
+          this.error_message = error.response.data.errors.full_messages
+        })
+      }
+    }
   }
-
 }
 </script>
 
