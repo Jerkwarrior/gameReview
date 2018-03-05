@@ -30,21 +30,17 @@ export default {
   methods: {
     submit: function () {
       if (this.registerForm.password !== this.password_confirm) {
-        this.error_message = "Passwords do not match, try again."
+        this.error_message = 'Passwords do not match, try again.'
       } else {
         let self = this
         this.axios.post('auth/', this.registerForm)
         .then(response => {
           const status = response.data.status
-          console.log(status)
-          if (status == 'success') {
+          if (status === 'success') {
             self.$router.push('/')
-          } else {
-            console.log(errors)
           }
         })
         .catch(error => {
-          console.log(error.response.data.errors.full_messages)
           this.error_message = error.response.data.errors.full_messages
         })
       }
