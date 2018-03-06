@@ -16,11 +16,11 @@
         <li @click="setActive('register')" :class="{ active: isActive('register') }">
           <router-link to="/register">Register</router-link>
         </li>
-        <li @click="setActive('logout')" :class="{ active: isActive('logout') }">
-          <router-link to="/logout">Logout</router-link>
+        <li @click="setActive('signout')" :class="{ active: isActive('signout') }">
+          <router-link to="/signout">Sign out</router-link>
         </li>
-        <li @click="setActive('login')" :class="{ active: isActive('login') }">
-          <router-link to="/login">Login</router-link>
+        <li @click="setActive('signin')" :class="{ active: isActive('signin') }">
+          <router-link to="/signin">Sign in</router-link>
         </li>
         <input class="searching" placeholder="Search...">
       </ul>

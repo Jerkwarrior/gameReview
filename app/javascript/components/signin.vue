@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="login">
+  <div class="signin">
     <h2>{{error_message[0]}}</h2>
     <!-- <p>Username:</p></br>
     <input v-model="signinForm.username" class="input" type="test"></br> -->
@@ -30,13 +30,11 @@ export default {
       this.axios.post('auth/sign_in', this.signinForm)
       .then(response => {
         const status = response.status
-        console.log(status)
         if (status === 200) {
           self.$router.push('/')
         }
       })
       .catch(error => {
-        console.log(error.response.data.errors)
         this.error_message = error.response.data.errors
       })
     }

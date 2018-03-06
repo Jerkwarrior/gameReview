@@ -36,10 +36,10 @@ import Home from 'components/home'
 import Games from 'components/games'
 import Developers from 'components/developers'
 import Publishers from 'components/publishers'
-import gameInfo from 'components/gameInfo'
+import GameInfo from 'components/game-info'
 import Register from 'components/register'
-import Login from 'components/login'
-import Logout from 'components/logout'
+import Signin from 'components/signin'
+import Signout from 'components/signout'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Cards from 'components/cards'
@@ -53,7 +53,7 @@ Vue.use(VueCarousel)
 // 1. Define route components.
 // These can be imported from other files
 
-Vue.component('game-info', gameInfo)
+Vue.component('game-info', GameInfo)
 Vue.component('cards', Cards)
 
 // 2. Define some routes
@@ -67,8 +67,8 @@ const routes = [
   { path: '/developers', component: Developers },
   { path: '/publishers', component: Publishers },
   { path: '/register', component: Register },
-  { path: '/login', component: Login },
-  { path: '/logout', component: Logout }
+  { path: '/signin', component: Signin },
+  { path: '/signout', component: Signout }
 ]
 
 // 3. Create the router instance and pass the `routes` option
