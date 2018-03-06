@@ -29,6 +29,7 @@
 // </div>
 
 import Vue from 'vue/dist/vue.esm'
+import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 import VueCarousel from 'vue-carousel'
 import Navbar from 'components/navbar'
@@ -45,6 +46,7 @@ import VueAxios from 'vue-axios'
 import Cards from 'components/cards'
 
 Vue.use(VueAxios, axios)
+Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.use(VueCarousel)
 
