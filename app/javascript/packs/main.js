@@ -30,6 +30,7 @@
 
 import Vue from 'vue/dist/vue.esm'
 import Vuex from 'vuex'
+// import store from './store'
 import VueRouter from 'vue-router'
 import VueCarousel from 'vue-carousel'
 import Navbar from 'components/navbar'
@@ -80,6 +81,18 @@ const router = new VueRouter({
   routes
 })
 
+const store = new Vuex.Store({
+  state: {
+    user: null
+  },
+
+  mutations: {
+    setUser (state, user) {
+      state.user = user
+    }
+  }
+})
+
 // 4. Create and mount the root instance.
 // Make sure to inject the router with the router option to make the
 // whole app router-aware.
@@ -87,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     router,
     el: '#app',
+    store,
     data: {
     },
     components: {navbar: Navbar}

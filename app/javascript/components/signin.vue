@@ -29,6 +29,11 @@ export default {
       let self = this
       this.axios.post('auth/sign_in', this.signinForm)
       .then(response => {
+        this.$store.commit('setUser', response.data.data)
+        console.log(this.$store.state.user.username)
+        console.log(this.$store.state.user.client)
+        console.log(this.$store.state.user.uid)
+        console.log(this.$store.state.user)
         const status = response.status
         if (status === 200) {
           self.$router.push('/')

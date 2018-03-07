@@ -8,7 +8,7 @@
 export default {
   methods: {
     logout () {
-      this.axios.get('/users/signout')
+      this.axios.get('/auth/sign_out')
       .then(function (response) {
         console.log(response)
       })
