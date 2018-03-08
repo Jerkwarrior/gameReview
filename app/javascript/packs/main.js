@@ -30,7 +30,7 @@
 
 import Vue from 'vue/dist/vue.esm'
 import Vuex from 'vuex'
-// import store from './store'
+import store from './store'
 import VueRouter from 'vue-router'
 import VueCarousel from 'vue-carousel'
 import Navbar from 'components/navbar'
@@ -79,18 +79,6 @@ const routes = [
 // keep it simple for now.
 const router = new VueRouter({
   routes
-})
-
-const store = new Vuex.Store({
-  state: {
-    user: null
-  },
-
-  mutations: {
-    setUser (state, user) {
-      state.user = user
-    }
-  }
 })
 
 // 4. Create and mount the root instance.

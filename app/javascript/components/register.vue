@@ -32,17 +32,7 @@ export default {
       if (this.registerForm.password !== this.password_confirm) {
         this.error_message = 'Passwords do not match, try again.'
       } else {
-        let self = this
-        this.axios.post('auth/', this.registerForm)
-        .then(response => {
-          const status = response.data.status
-          if (status === 'success') {
-            self.$router.push('/')
-          }
-        })
-        .catch(error => {
-          this.error_message = error.response.data.errors.full_messages
-        })
+        this.$store.dispatch('signUp', this.registerForm)
       }
     }
   }

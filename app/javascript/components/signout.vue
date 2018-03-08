@@ -8,13 +8,7 @@
 export default {
   methods: {
     logout () {
-      this.axios.get('/auth/sign_out')
-      .then(function (response) {
-        console.log(response)
-      })
-        .catch(function (error) {
-          console.log(error)
-        })
+      this.$store.dispatch('signOut')
     }
   }
 }
