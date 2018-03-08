@@ -8,8 +8,6 @@ Vue.use(VueAxios, axios)
 
 const store = new Vuex.Store({
   state: {
-    // May be uneccessary
-    // user: null,
     idToken: null,
     client: null,
     username: null,
@@ -18,57 +16,54 @@ const store = new Vuex.Store({
 
   actions: {
     signUp ({commit}, authData) {
-      axios.post('auth/', authData)
-        .then(response => {
-          commit('setUser', {
-            username: response.data.data.username,
-            email: response.data.data.email
+      return new Promise((resolve, reject) => {
+        axios.post('auth/', authData)
+          .then(response => {
+            commit('setUser', {
+              username: response.data.data.username,
+              email: response.data.data.email
+            })
+            resolve(response)
           })
-          if (response.status === 200) {
-            this.$router.push('/')
-            window.alert('Success!')
-          }
-        })
-        .catch(error => {
-          console.log(error)
-          // return error.response.data.errors.full_messages
-        })
+          .catch(error => {
+            reject(error)
+          })
+      })
     },
 
     signIn ({commit}, authData) {
-      axios.post('auth/sign_in', authData)
-        .then(response => {
-          commit('setUser', {
-            username: response.data.data.username,
-            email: response.data.data.email,
-            idToken: response.headers['access-token'],
-            client: response.headers['client']
+      return new Promise((resolve, reject) => {
+        axios.post('auth/sign_in', authData)
+          .then(response => {
+            commit('setUser', {
+              username: response.data.data.username,
+              email: response.data.data.email,
+              idToken: response.headers['access-token'],
+              client: response.headers['client']
+            })
+            resolve(response)
           })
-          if (response.status === 200) {
-            this.$router.push('/')
-            window.alert('Success!')
-          }
-          // The line below may be uneccessary
-          // commit('storeUser', response.data)
-        })
-        .catch(error => {
-          console.log(error)
-        })
+          .catch(error => {
+            reject(error)
+          })
+      })
     },
 
     signOut () {
-      axios({
-        method: 'get',
-        url: 'auth/sign_out',
-        headers: store.getters.signOutUserHeaders
+      return new Promise((resolve, reject) => {
+        axios({
+          method: 'get',
+          url: 'auth/sign_out',
+          headers: store.getters.signOutUserHeaders
+        })
+          .then(response => {
+            store.commit('unsetUser')
+            resolve(response)
+          })
+          .catch(error => {
+            reject(error)
+          })
       })
-        .then(response => {
-          console.log(response)
-          store.commit('unsetUser')
-        })
-        .catch(error => {
-          console.log(error)
-        })
     }
   },
 
@@ -85,10 +80,6 @@ const store = new Vuex.Store({
       state.username = null
       state.email = null
     }
-    // The mutation below may be uneccessary
-    // storeUser (state, user) {
-    //   state.user = user
-    // }
   },
 
   getters: {

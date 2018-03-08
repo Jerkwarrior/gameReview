@@ -33,6 +33,14 @@ export default {
         this.error_message = 'Passwords do not match, try again.'
       } else {
         this.$store.dispatch('signUp', this.registerForm)
+          .then(response => {
+            if (response.status === 200) {
+              this.$router.push('/')
+              window.alert('Success, Please check your email!')
+            }
+          }, error => {
+            this.error_message = error.response.data.errors.full_messages
+          })
       }
     }
   }

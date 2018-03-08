@@ -25,6 +25,14 @@ export default {
   methods: {
     submit: function () {
       this.$store.dispatch('signIn', this.signinForm)
+        .then(response => {
+          if (response.status === 200) {
+            this.$router.push('/')
+            window.alert('Success!')
+          }
+        }, error => {
+          this.error_message = error.response.data.errors
+        })
     }
   }
 }

@@ -9,6 +9,11 @@ export default {
   methods: {
     logout () {
       this.$store.dispatch('signOut')
+        .then(response => {
+          this.$router.push('/')
+        }, error => {
+          console.log(error)
+        })
     }
   }
 }
