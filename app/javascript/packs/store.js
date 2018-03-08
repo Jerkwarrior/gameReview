@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
+// import VueAxios from 'vue-axios'
 
 Vue.use(Vuex)
-Vue.use(VueAxios, axios)
+Vue.use(axios)
+// Vue.use(VueAxios, axios)
 
 const store = new Vuex.Store({
   state: {
