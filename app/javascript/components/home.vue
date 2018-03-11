@@ -1,14 +1,17 @@
 <template>
-<div class="main">
-  <h1>Game Review Site Title</h1>
-  <input placeholder="Search...">
-  <h2>Top Rated</h2>
-  <carousel>
-    <slide>
-      <cards></cards>
-    </slide>
-  </carousel>
-</div>
+  <div class="main">
+    <div class="title">
+      <h1>Game Review</h1>
+      <input placeholder="Search for a game, developer or publisher">
+    </div>
+    <div class="home-tiles">
+      <carousel>
+        <slide>
+          <cards></cards>
+        </slide>
+      </carousel>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,22 +20,27 @@
 
 <style scoped lang="sass">
 *
-  font-family: Helvetica, Verdana, sans-serif
+  font-family: 'Noto-sans', sans-serif
+  font-weight: normal
+  margin: 0
 
 .main
   text-align: center
+  vertical-align: top
+  .title
+    font-size: 50px
+    color: white
   input
-    width: 130px
+    margin-top: 60px
+    font-family: 'Mina', sans-serif
+    width: 1000px
+    height: 100px
     box-sizing: border-box
     border: 2px solid #ccc
     border-radius: 4px
-    font-size: 16px
+    font-size: 26px
+    text-align: center
     background-color: white
     background-position: 10px 10px
     background-repeat: no-repeat
-    padding: 12px 20px 12px 40px
-    -webkit-transition: width 0.4s ease-in-out
-    transition: width 0.4s ease-in-out
-  input:focus
-    width: 100%
 </style>

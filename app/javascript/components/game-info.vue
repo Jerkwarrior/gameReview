@@ -34,13 +34,13 @@ export default {
   },
   created () {
     this.axios.get('games/' + this.game_id)
-    .then(response => {
-      this.game = response.data
-      console.log(this.game)
-    })
-    .catch(e => {
-      this.errors.push(e)
-    })
+      .then(response => {
+        this.game = response.data
+        console.log(this.game)
+      })
+      .catch(e => {
+        this.errors.push(e)
+      })
   }
 }
 </script>
@@ -48,7 +48,7 @@ export default {
 <style scoped lang="sass">
 
 .game-info
-  font-family: Helvetica, Verdana, sans-serif
+  font-family: 'Mina', sans-serif
   margin-left: 25px
 .main
   overflow: hidden

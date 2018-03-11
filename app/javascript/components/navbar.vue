@@ -1,36 +1,22 @@
 <template>
-  <nav>
-      <ul>
-        <li @click="setActive('home')" :class="{ active: isActive('home') }">
-          <router-link to="/">Home</router-link>
-        </li>
-        <li @click="setActive('games')" :class="{ active: isActive('games') }">
-          <router-link to="/games">Games</router-link>
-        </li>
-        <li @click="setActive('developers')" :class="{ active: isActive('developers') }">
-          <router-link to="/developers">Developers</router-link>
-        </li>
-        <li @click="setActive('publishers')" :class="{ active: isActive('publishers') }">
-          <router-link to="/publishers">Publishers</router-link>
-        </li>
-        <li @click="setActive('register')" :class="{ active: isActive('register') }">
-          <router-link to="/register">Register</router-link>
-        </li>
-        <li @click="setActive('signout')" :class="{ active: isActive('signout') }">
-          <router-link to="/signout">Sign out</router-link>
-        </li>
-        <li @click="setActive('signin')" :class="{ active: isActive('signin') }">
-          <router-link to="/signin">Sign in</router-link>
-        </li>
-        <input class="searching" placeholder="Search...">
-      </ul>
-  </nav>
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <router-link to="/">Home</router-link>
+      <router-link to="/games">Games</router-link>
+      <router-link to="/developers">Developers</router-link>
+      <router-link to="/publishers">Publishers</router-link>
+      <router-link to="/register">Register</router-link>
+      <router-link to="/signout">Sign out</router-link>
+      <router-link to="/signin">Sign in</router-link>
+      <input class="searching" placeholder="Search...">
+    </nav>
+</div>
 </template>
 
 <script>
 export default {
   data () {
-    return {activeItem: 'home' }
+    return {activeItem: 'home'}
   },
   methods: {
     isActive: function (menuItem) {
@@ -44,35 +30,24 @@ export default {
 </script>
 
 <style scoped lang="sass">
-*
-  margin: 0
-  padding: 0
-nav
-  margin: 50px
-  ul
-    overflow: auto
-    list-style-type: none
-  li
-    height: 25px
-    float: left
-    margin-right: 0px
-    border-right: 1px solid #aaa
-    padding: 0 20px
-    &:last-child
-      border-right: none
-    a
-      text-decoration: none
-      color: #ccc
-      font: 20px/1 Helvetica, Verdana, sans-serif
-      text-transform: uppercase
-      -webkit-transition: all 0.5s ease
-      -moz-transition: all 0.5s ease
-      -o-transition: all 0.5s ease
-      -ms-transition: all 0.5s ease
-      transition: all 0.5s ease
-      &:hover
-        color: #999
-    &.active a
-      font-weight: bold
-      color: #333
+  *
+    margin: 0
+    padding: 0
+    font-family: 'Mina', sans-serif
+
+  .nav-wrapper
+    padding: 50px
+    text-align: center
+    .navbar
+      font-size: 16px
+      a
+        text-decoration: none
+        color: white
+        padding-right: 30px
+      a:hover
+        color: blue
+      nav
+      .router-link-exact-active
+        cursor: pointer
+        color: blue
 </style>
