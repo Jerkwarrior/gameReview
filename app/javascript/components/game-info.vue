@@ -54,6 +54,7 @@ export default {
   overflow: hidden
   width: 50%
   border: 5px solid
+  border-color: #FDFDFD
   padding: 1%
   h1
     text-align: center

@@ -36,18 +36,21 @@ export default {
     font-family: 'Mina', sans-serif
 
   .nav-wrapper
-    padding: 50px
+    padding: 20px
+    margin-bottom: 50px
     text-align: center
     .navbar
       font-size: 16px
       a
         text-decoration: none
-        color: white
         padding-right: 30px
+        padding-left: 10px
+        color: #FDFDFD
       a:hover
-        color: blue
+        text-shadow: 0 0 .65px white
       nav
       .router-link-exact-active
         cursor: pointer
-        color: blue
+        color: white
+        font-weight: bold
 </style>
