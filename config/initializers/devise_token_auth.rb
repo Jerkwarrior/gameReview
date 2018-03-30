@@ -43,7 +43,7 @@ DeviseTokenAuth.setup do |config|
 
   # By default, only Bearer Token authentication is implemented out of the box.
   # If, however, you wish to integrate with legacy Devise authentication, you can
-  # do so by enabling this flag. NOTE: This feature is highly experimental!
+  # do so by enabling this flag. NOTE: This feature is highly experimental! id:1 gh:46 ic:gh
   # config.enable_standard_devise_support = false
   config.default_confirm_success_url = 'confirmed'
 end
