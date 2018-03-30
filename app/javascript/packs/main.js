@@ -39,6 +39,7 @@ import Games from 'components/games'
 import Developers from 'components/developers'
 import Publishers from 'components/publishers'
 import GameInfo from 'components/game-info'
+import Review from 'components/review'
 import Register from 'components/register'
 import Signin from 'components/signin'
 import Signout from 'components/signout'
@@ -58,6 +59,7 @@ Vue.use(VueCarousel)
 
 Vue.component('game-info', GameInfo)
 Vue.component('cards', Cards)
+Vue.component('review', Review)
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can

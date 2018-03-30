@@ -50,6 +50,7 @@ export default {
 .game-info
   font-family: 'Mina', sans-serif
   margin-left: 25px
+  background-color: red
 .main
   overflow: hidden
   width: 50%
