@@ -46,6 +46,7 @@ import Signout from 'components/signout'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Cards from 'components/cards'
+import Search from 'components/search'
 
 Vue.use(VueAxios, axios)
 Vue.use(Vuex)
@@ -59,6 +60,7 @@ Vue.use(VueCarousel)
 
 Vue.component('game-info', GameInfo)
 Vue.component('cards', Cards)
+Vue.component('search', Search)
 Vue.component('review', Review)
 
 // 2. Define some routes
