@@ -8,7 +8,7 @@
       <router-link to="/register">Register</router-link>
       <router-link to="/signout">Sign out</router-link>
       <router-link to="/signin">Sign in</router-link>
-      <input class="searching" placeholder="Search...">
+        <input class="searching" placeholder="Search...">
     </nav>
 </div>
 </template>

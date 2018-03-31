@@ -3,7 +3,7 @@
     <input placeholder="Search for a game" type="text" v-model="search">
     <div v-if= "search !== ''">
       <div v-for="data in filteredItems">
-        <p>{{data.name}}</p>
+        <router-link :to="{ name: 'game', params: {gameId: data.id} }">{{data.name}}</router-link>
       </div>
     </div>
   </div >

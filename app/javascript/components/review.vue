@@ -46,5 +46,5 @@ export default {
 
 <style lang="sass">
   .review
-    background-color: green
+    background-color: #1f1f1f
 </style>

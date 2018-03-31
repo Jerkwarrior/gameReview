@@ -5,9 +5,18 @@
       <search></search>
     </div>
     <div class="home-tiles">
-      <carousel>
+      <carousel per-page="4">
         <slide>
-          <!-- <cards></cards> -->
+          <game-card gameId=1></game-card>
+        </slide>
+        <slide>
+          <game-card gameId=2></game-card>
+        </slide>
+        <slide>
+          <game-card gameId=3></game-card>
+        </slide>
+        <slide>
+          <game-card gameId=5></game-card>
         </slide>
       </carousel>
     </div>
@@ -18,6 +27,14 @@
 export default {
   data () {
     // return {image: null}
+  },
+  methods: {
+    getGames: function () {
+      this.axios.get('games')
+        .then(response => {
+          this.searchData = response.data
+        })
+    }
   }
 }
 

@@ -59,7 +59,7 @@ Vue.use(VueCarousel)
 // These can be imported from other files
 
 Vue.component('game-info', GameInfo)
-Vue.component('cards', Cards)
+Vue.component('game-card', Cards)
 Vue.component('search', Search)
 Vue.component('review', Review)
 
@@ -71,6 +71,7 @@ Vue.component('review', Review)
 const routes = [
   { path: '/', component: Home },
   { path: '/games', component: Games },
+  { path: '/games/:gameId', name: 'game', component: GameInfo, props: true },
   { path: '/developers', component: Developers },
   { path: '/publishers', component: Publishers },
   { path: '/register', component: Register },
