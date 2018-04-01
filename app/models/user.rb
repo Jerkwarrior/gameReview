@@ -13,6 +13,6 @@ class User < ApplicationRecord
 
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
 
-  has_many :games
-  has_many :reviews, through: :games
+  has_many :reviews
+  has_many :games, through: :reviews
 end
