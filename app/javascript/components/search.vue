@@ -42,13 +42,13 @@ export default {
 <style lang="sass">
 .search
   input
-    margin-top: 60px
+    // margin-top: 60px
     font-family: 'Mina', sans-serif
     width: 1000px
     height: 100px
     box-sizing: border-box
     border: 2px solid #ccc
-    border-radius: 4px
+    border-radius: 25px
     font-size: 26px
     text-align: center
     background-color: #FDFDFD
