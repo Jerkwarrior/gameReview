@@ -1,5 +1,7 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
+  before_action :set_game
+  before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
 
   def index
     @reviews = Review.all
@@ -17,15 +19,10 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
-
-    respond_to do |format|
-      if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
-        format.json { render :show, status: :created, location: @review }
-      else
-        format.html { render :new }
-        format.json { render json: @review.errors, status: :unprocessable_entity }
-      end
+    if @review.save
+      render json: @review
+    else
+      render json: @review.errors, status: :unprocessable_entity
     end
   end
 
@@ -55,8 +52,18 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
   end
 
+  def set_game
+    @game = Game.find(params[:game_id])
+  end
+
+  def game_params
+    params.require(:game).permit(:name, :slug, :url, :summary, :popularity,
+                                 :game, :category, :status, :release_date_human,
+                                 :cover_url, :franchise_id, :collection_id)
+  end
+
   def review_params
-    params.require(:review).permit(:gameplay, :story, :graphics, :immersion,
-                                   :recommended?, :bugs?, :microtransactions?)
+    params.require(:review).permit(:summary, :gameplay, :story, :graphics, :immersion,
+                                   :recommended?, :bugs?, :microtransactions?).merge(game: @game, user: current_user)
   end
 end
