@@ -91,6 +91,16 @@ const store = new Vuex.Store({
         'access-token': state.idToken
       }
       return header
+    },
+    userRequestHeaders (state) {
+      var header = {
+        uid: state.email,
+        client: state.client,
+        'access-token': state.idToken,
+        'content-type': 'application/json',
+        'token-type': 'Bearer'
+      }
+      return header
     }
   }
 })

@@ -11,6 +11,7 @@ export default {
       this.$store.dispatch('signOut')
         .then(response => {
           this.$router.push('/')
+          window.alert('Success!')
         }, error => {
           console.log(error)
         })

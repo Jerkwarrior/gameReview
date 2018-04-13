@@ -38,7 +38,17 @@ export default {
   },
   methods: {
     submit: function () {
-      this.axios.post('', this.review)
+      let self = this
+      this.axios.post('games/13/reviews', this.review, {
+        headers: self.$store.getters.userRequestHeaders
+      })
+        .then(response => {
+          window.alert('SUCCESS!')
+          console.log(this.response)
+        })
+        .catch(e => {
+          this.errors.push(e)
+        })
     }
   }
 }
