@@ -15,7 +15,7 @@
     <p>Microtransactions?</p></br>
     <input v-model="review.microtransactions" type="checkbox" name="microtransactions"></br>
     <p>Recommended?</p></br>
-    <input v-model="recommended" type="checkbox" name="recommended"></br>
+    <input v-model="review.recommended" type="checkbox" name="recommended"></br>
     <input v-on:click="submit()" type="submit" value="submit">
   </div>
 </template>

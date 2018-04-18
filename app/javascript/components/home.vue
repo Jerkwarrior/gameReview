@@ -18,18 +18,18 @@
     </div> -->
 
     <div class="home-tiles">
-      <carousel per-page="4">
+      <carousel :perPage=4>
         <slide>
-          <game-card gameId=5></game-card>
+          <game-card :gameId=5></game-card>
         </slide>
         <slide>
-          <game-card gameId=6></game-card>
+          <game-card :gameId=6></game-card>
         </slide>
         <slide>
-          <game-card gameId=10></game-card>
+          <game-card :gameId=10></game-card>
         </slide>
         <slide>
-          <game-card gameId=13></game-card>
+          <game-card :gameId=13></game-card>
         </slide>
       </carousel>
     </div>
@@ -38,9 +38,9 @@
 
 <script>
 export default {
-  data () {
+ //  data () {
     // return {image: null}
-  },
+ // },
   methods: {
     getGames: function () {
       this.axios.get('games')

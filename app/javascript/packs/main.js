@@ -62,6 +62,7 @@ Vue.component('game-info', GameInfo)
 Vue.component('game-card', Cards)
 Vue.component('search', Search)
 Vue.component('review', Review)
+Vue.component('navbar', Navbar)
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -92,11 +93,10 @@ const router = new VueRouter({
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     router,
-    el: '#app',
+    // el: '#app',
     store,
     data: {
     },
-    components: {navbar: Navbar}
-  })
+  }).$mount('#app')
 })
 // Now the app has started!
