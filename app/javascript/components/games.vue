@@ -1,7 +1,7 @@
 <template>
   <div class='game'>
     <game-info gameId=5></game-info>
-    <review></review>
+    <!-- <review></review> -->
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 
 <style scoped lang="sass">
 .game
-  background-color: #191919
+  // background-color: #191919
   float: left
   display: inline-block
 
