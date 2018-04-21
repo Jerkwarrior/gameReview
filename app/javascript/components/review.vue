@@ -22,6 +22,7 @@
 
 <script>
 export default {
+  props: ['gameId'],
   data: function () {
     return {
       review: {

@@ -6,7 +6,8 @@
   </div>
   <div class="center">
     <div class="center-buttons">
-      <button type="button" name="button">Review Game</button>
+      <!-- <button type="button" name="button">Review Game</button> -->
+      <router-link :to="{ name: 'review', params: {gameId: game.id} }" tag="button">Review Game</router-link>
       <button type="button" name="button">Go Back</button>
       <button type="button" name="button">Share</button>
     </div>

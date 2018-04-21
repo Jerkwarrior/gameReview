@@ -33,6 +33,7 @@ import Vuex from 'vuex'
 import store from './store'
 import VueRouter from 'vue-router'
 import VueCarousel from 'vue-carousel'
+import VuePaginate from 'vue-paginate'
 import Navbar from 'components/navbar'
 import Home from 'components/home'
 import Games from 'components/games'
@@ -52,6 +53,7 @@ Vue.use(VueAxios, axios)
 Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.use(VueCarousel)
+Vue.use(VuePaginate)
 
 // 0. If using a module system, call Vue.use(VueRouter)
 
@@ -72,7 +74,8 @@ Vue.component('navbar', Navbar)
 const routes = [
   { path: '/', component: Home },
   { path: '/games', component: Games },
-  { path: '/games/:gameId', name: 'game', component: GameInfo, props: true },
+  { path: '/game/:gameId', name: 'game', component: GameInfo, props: true },
+  { path: '/game/:gameId/review', name: 'review', component: Review, props: true },
   { path: '/developers', component: Developers },
   { path: '/publishers', component: Publishers },
   { path: '/register', component: Register },

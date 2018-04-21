@@ -1,7 +1,11 @@
 <template>
   <div class="game-card">
-    <h3>{{game.name}}</h3>
-    <img v-bind:src="game.cover_big">
+    <div class="title">
+      <router-link :to="{ name: 'game', params: {gameId: game.id} }">{{game.name}}</router-link>
+    </div>
+    <div class="image">
+      <img v-bind:src="game.cover_big">
+    </div>
   </div>
 </template>
 
@@ -26,8 +30,19 @@ export default {
 
 <style scoped lang="sass">
 .game-card
-  width: 50%
-  padding: 1%
-  h3
-    text-align: center
+  background-color: #1A1A1A
+  width: 300px
+  height: 450px
+  margin: 20px
+  padding: 40px
+  text-align: center
+  align-content: center
+  float: left
+  .title
+    height: 80px
+    a
+      font-family: 'Exo 2', sans-serif
+      font-size: 30px
+      color: #FDFDFD
+      text-decoration: none
 </style>

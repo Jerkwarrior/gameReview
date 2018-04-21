@@ -41,14 +41,14 @@ export default {
  //  data () {
     // return {image: null}
  // },
-  methods: {
-    getGames: function () {
-      this.axios.get('games')
-        .then(response => {
-          this.searchData = response.data
-        })
-    }
-  }
+  // methods: {
+  //   getGames: function () {
+  //     this.axios.get('games')
+  //       .then(response => {
+  //         this.searchData = response.data
+  //       })
+  //   }
+  // }
 }
 
 </script>
