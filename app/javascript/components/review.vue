@@ -1,8 +1,26 @@
 <template lang="html">
   <div class="review">
+
+    <div class="left">
     <p>Summary</p></br>
     <input v-model="review.summary" type="text" name="summary"></br>
-    <p>Gameplay</p></br>
+    </div>
+
+    <div class="right">
+      <p>Gamesplay</p>
+      <vue-slider v-model="gameplay" min=0 max=10 width="20"></vue-slider>
+
+      <p>Story</p>
+      <vue-slider v-model="Story" min=0 max=10 width="20"></vue-slider>
+
+      <p>Graphics</p>
+      <vue-slider v-model="graphics" min=0 max=10 width="20"></vue-slider>
+
+      <p>Immersion</p>
+      <vue-slider v-model="immersion" min=0 max=10 width="20"></vue-slider>
+    </div>
+
+    <!-- <p>Gameplay</p></br>
     <input v-model="review.gameplay" type="number" name="gameplay"></br>
     <p>Story</p></br>
     <input v-model="review.story" type="number" name="story"></br>
@@ -16,7 +34,7 @@
     <input v-model="review.microtransactions" type="checkbox" name="microtransactions"></br>
     <p>Recommended?</p></br>
     <input v-model="review.recommended" type="checkbox" name="recommended"></br>
-    <input v-on:click="submit()" type="submit" value="submit">
+    <input v-on:click="submit()" type="submit" value="submit"> -->
   </div>
 </template>
 
@@ -57,5 +75,18 @@ export default {
 
 <style lang="sass">
   .review
-    background-color: #1a1a1a
+    // background-color: #001B26
+    background-color: green
+    display: inline-block
+    width: 100%
+    height: 650px
+    float: left
+    .left
+      float: left
+      background-color: red
+      width: 50%
+    .right
+      float: right
+      background-color: blue
+      width: 50%
 </style>

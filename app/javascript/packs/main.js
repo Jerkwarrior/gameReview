@@ -34,6 +34,7 @@ import store from './store'
 import VueRouter from 'vue-router'
 import VueCarousel from 'vue-carousel'
 import VuePaginate from 'vue-paginate'
+import VueSlider from 'vue-slider-component'
 import Navbar from 'components/navbar'
 import Home from 'components/home'
 import Games from 'components/games'
@@ -54,6 +55,7 @@ Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.use(VueCarousel)
 Vue.use(VuePaginate)
+Vue.use(VueSlider)
 
 // 0. If using a module system, call Vue.use(VueRouter)
 
@@ -65,6 +67,7 @@ Vue.component('game-card', Cards)
 Vue.component('search', Search)
 Vue.component('review', Review)
 Vue.component('navbar', Navbar)
+Vue.component('vue-slider', VueSlider)
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
